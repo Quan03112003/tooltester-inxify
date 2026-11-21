@@ -1,0 +1,57 @@
+[
+  {
+    "id": "412a3715-d1c8-43a9-8b63-ebf135890940",
+    "userId": "39584460-afdb-49ba-8f21-95254804e845",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "GUEST_LIST_VIEW",
+    "entityType": "Guest",
+    "entityId": null,
+    "oldValues": null,
+    "newValues": {
+      "page": 1,
+      "count": 20,
+      "masked": false,
+      "matched": 14030
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Grafana k6/2.4.0",
+    "createdAt": "2026-11-18T08:39:12.154Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm9",
+      "role": "OTA_MANAGER"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "f0c833e6-fb73-4bff-b054-17b6afc72f6e",
+    "userId": "a94ef261-44eb-47ed-af79-6dd82ffc34e2",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "GUEST_SEARCH",
+    "entityType": "Guest",
+    "entityId": null,
+    "oldValues": null,
+    "newValues": {
+      "q": "Khách",
+      "count": 10,
+      "masked": false
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:45.463Z",
+    "user": {
+      "fullName": "Kiểm thử - Quản trị chuỗi",
+      "username": "pt.admin",
+      "role": "ADMIN"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  }
+]

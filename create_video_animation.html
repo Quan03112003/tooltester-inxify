@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Video Hướng Dẫn Microsoft 365 (Liên kết Teams - Outlook & Phân Role)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; }
+  body {
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    background: #090d16;
+    color: #f8fafc;
+    position: relative;
+    user-select: none;
+  }
+
+  /* Top Banner */
+  #top-banner {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 50px;
+    background: linear-gradient(90deg, #1e3a8a, #0b1120);
+    border-bottom: 2px solid #b91c1c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 100;
+  }
+  .brand-group { display: flex; align-items: center; gap: 12px; }
+  .brand-badge {
+    background: #b91c1c; color: #fff; padding: 3px 10px; border-radius: 4px; font-weight: 800; font-size: 13px;
+  }
+  .brand-title { font-size: 14px; font-weight: 700; color: #f1f5f9; }
+  .brand-sub { font-size: 11px; color: #94a3b8; }
+  .scene-pill {
+    background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 4px 14px; border-radius: 16px; font-size: 12px; font-weight: 600; color: #38bdf8; display: flex; align-items: center; gap: 8px;
+  }
+  .pulse-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 8px #22c55e; }
+
+  /* Bottom Progress & Subtitle Bar */
+  #bottom-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 68px;
+    background: rgba(10, 15, 29, 0.98);
+    border-top: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+    z-index: 100;
+  }
+  #progress-track {
+    width: 100%; height: 4px; background: rgba(255,255,255,0.15); border-radius: 2px; overflow: hidden; margin-bottom: 6px;
+  }
+  #progress-fill {
+    height: 100%; width: 0%; background: linear-gradient(90deg, #38bdf8, #ef4444); transition: width 0.1s linear;
+  }
+  .bar-info { display: flex; justify-content: space-between; align-items: center; }
+  #subtitle-text {
+    font-size: 14px; font-weight: 600; color: #fef08a; display: flex; align-items: center; gap: 10px; line-height: 1.4; max-width: 1120px;
+  }
+  .voice-tag {
+    background: #0284c7; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;
+  }
+  #timer-text { font-size: 12.5px; font-weight: 700; color: #94a3b8; font-variant-numeric: tabular-nums; }
+
+  /* Cursor */
+  #virtual-cursor {
+    position: absolute; width: 24px; height: 24px; pointer-events: none; z-index: 1000;
+    transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1);
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));
+  }
+
+  /* Scenes */
+  .scene {
+    position: absolute; top: 50px; left: 0; right: 0; bottom: 68px;
+    display: none; opacity: 0; transition: opacity 0.4s ease; padding: 14px 18px;
+  }
+  .scene.active { display: flex; opacity: 1; }
+
+  /* App Window Container */
+  .app-container {
+    flex: 1; background: #1f1f23; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.7); border: 1px solid #333842; color: #fff; position: relative;
+  }
+
+  /* Right Sidebar */
+  .info-sidebar {
+    width: 330px; background: #1e293b; border: 1px solid rgba(255,255,255,0.12); border-radius: 8px;
+    padding: 14px; display: flex; flex-direction: column; justify-content: space-between; margin-left: 14px;
+  }
+  .is-step { font-size: 11px; font-weight: 800; color: #38bdf8; text-transform: uppercase; margin-bottom: 4px; }
+  .is-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+  .is-desc { font-size: 12.5px; color: #cbd5e1; line-height: 1.5; margin-bottom: 10px; }
+  .is-box { background: rgba(255,255,255,0.05); padding: 7px 10px; border-radius: 6px; font-size: 11.5px; color: #f1f5f9; border-left: 3px solid #38bdf8; margin-bottom: 6px; }
+  .is-warn { background: rgba(239, 68, 68, 0.15); border: 1px solid #ef4444; border-radius: 6px; padding: 8px; font-size: 11px; color: #fca5a5; }
+
+  /* =========================================================================
+     SCENE 1: INTRO (0.0s - 18.5s)
+     ========================================================================= */
+  #scene-intro {
+    flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    background: radial-gradient(circle at center, #1e293b 0%, #090d16 100%);
+  }
+  .intro-card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 14px; padding: 32px 44px; max-width: 880px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  }
+  .intro-tag {
+    display: inline-flex; align-items: center; gap: 8px; background: rgba(185, 28, 28, 0.2); border: 1px solid #b91c1c; color: #fca5a5;
+    padding: 5px 14px; border-radius: 20px; font-size: 12.5px; font-weight: 700; margin-bottom: 14px;
+  }
+  .intro-title { font-size: 30px; font-weight: 800; color: #ffffff; line-height: 1.3; margin-bottom: 10px; }
+  .intro-title span { color: #38bdf8; }
+  .intro-desc { font-size: 14.5px; color: #cbd5e1; line-height: 1.6; margin-bottom: 22px; max-width: 780px; margin-left: auto; margin-right: auto; }
+  .intro-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px; }
+  .ig-box { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 10px 8px; text-align: center; }
+  .ig-box .icon { font-size: 22px; margin-bottom: 4px; }
+  .ig-box .name { font-size: 12.5px; font-weight: 700; color: #f1f5f9; }
+  .ig-box .role { font-size: 10.5px; color: #94a3b8; }
+
+  /* =========================================================================
+     SCENE 2: TEAMS - PROFILE CARD & MANAGE ROLE (18.5s - 54.1s)
+     ========================================================================= */
+  #scene-teams { flex-direction: row; }
+  .teams-layout { flex: 1; display: flex; height: 100%; overflow: hidden; }
+  .teams-rail {
+    width: 60px; background: #18181b; border-right: 1px solid #2e2e33; display: flex; flex-direction: column; align-items: center; padding: 12px 0; gap: 16px;
+  }
+  .rail-btn { display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 9.5px; color: #a1a1aa; cursor: pointer; position: relative; }
+  .rail-btn.active { color: #7f85f5; }
+  .rail-btn.active::before { content: ""; position: absolute; left: -10px; top: 4px; bottom: 4px; width: 3px; background: #7f85f5; border-radius: 2px; }
+
+  .teams-content-pane { flex: 1; display: flex; flex-direction: column; background: #1f1f23; position: relative; }
+  .teams-top-nav {
+    height: 40px; border-bottom: 1px solid #2e2e33; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; background: #1b1b1e;
+  }
+  .search-box-sim {
+    background: #28282d; border-radius: 4px; padding: 3px 12px; font-size: 11.5px; color: #e4e4e7; width: 360px; display: flex; align-items: center; gap: 8px; border: 1px solid #3f3f46;
+  }
+
+  /* Split View inside Teams: Left Team Channels, Right Main Content */
+  .teams-split { flex: 1; display: flex; overflow: hidden; }
+  .teams-chans { width: 230px; background: #232328; border-right: 1px solid #2e2e33; padding: 10px; font-size: 12px; }
+  .team-name-hdr { font-weight: 700; color: #fff; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; }
+  .chan-item { padding: 5px 8px; border-radius: 4px; color: #a1a1aa; cursor: pointer; margin-bottom: 2px; }
+  .chan-item.active { background: #323238; color: #fff; font-weight: 600; }
+
+  .teams-main-view { flex: 1; display: flex; flex-direction: column; padding: 14px; position: relative; background: #1b1b1e; }
+
+  /* Popover: Entra ID Profile Card with Role & Org Chart */
+  .profile-card-sim {
+    position: absolute; top: 20px; left: 30px; width: 420px; background: #242428;
+    border-radius: 8px; box-shadow: 0 16px 40px rgba(0,0,0,0.85); border: 1px solid #3f3f46;
+    overflow: hidden; z-index: 80; opacity: 0; transform: scale(0.96); transition: all 0.35s ease;
+  }
+  .profile-card-sim.visible { opacity: 1; transform: scale(1); }
+  .pc-head { background: linear-gradient(135deg, #1e3a8a, #2563eb); padding: 14px; display: flex; gap: 12px; align-items: center; }
+  .pc-avatar { width: 52px; height: 52px; border-radius: 50%; background: #b91c1c; border: 2px solid #fff; font-size: 18px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+  .pc-meta h4 { font-size: 15px; font-weight: 700; color: #fff; }
+  .pc-meta p { font-size: 11.5px; color: #cbd5e1; }
+  .pc-role-pill { background: #f59e0b; color: #000; font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 10px; display: inline-block; margin-top: 3px; }
+  .pc-tabs { display: flex; background: #1b1b1e; border-bottom: 1px solid #333; font-size: 11.5px; }
+  .pct { padding: 6px 14px; color: #a1a1aa; font-weight: 600; cursor: pointer; }
+  .pct.active { color: #38bdf8; border-bottom: 2px solid #38bdf8; }
+  .pc-org { padding: 12px; font-size: 11px; }
+  .pc-node { background: #2a2a30; border: 1px solid #3f3f46; border-radius: 5px; padding: 6px 10px; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center; }
+  .pc-node.mgr { background: #1e293b; border-color: #38bdf8; font-weight: 700; color: #38bdf8; }
+  .pc-node.curr { background: #383a59; border-color: #7f85f5; font-weight: 700; margin-left: 14px; color: #fff; }
+  .pc-node.sub { margin-left: 28px; background: #202024; color: #a1a1aa; }
+
+  /* Manage Team Modal: ROLE ASSIGNMENT (Owner vs Member) */
+  .manage-team-modal {
+    position: absolute; top: 15px; left: 20px; right: 20px; bottom: 15px;
+    background: #232328; border-radius: 8px; box-shadow: 0 16px 40px rgba(0,0,0,0.85); border: 1px solid #3f3f46;
+    display: none; flex-direction: column; z-index: 90; padding: 16px;
+  }
+  .manage-team-modal.visible { display: flex; }
+  .mtm-hdr { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 12px; display: flex; justify-content: space-between; border-bottom: 1px solid #333; padding-bottom: 8px; }
+  .mtm-table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+  .mtm-table th { text-align: left; padding: 6px 8px; border-bottom: 1px solid #3f3f46; color: #94a3b8; font-size: 11px; }
+  .mtm-table td { padding: 8px; border-bottom: 1px solid #2b2b32; }
+  .role-select { background: #18181b; border: 1px solid #3f3f46; color: #fff; border-radius: 4px; padding: 3px 8px; font-size: 11px; font-weight: 600; }
+  .role-owner { color: #f59e0b; font-weight: 700; }
+  .role-member { color: #38bdf8; }
+
+  /* =========================================================================
+     SCENE 3: OUTLOOK - TEAMS MEETING & SCHEDULING (54.1s - 77.7s)
+     ========================================================================= */
+  #scene-outlook { flex-direction: row; }
+  .out-app {
+    flex: 1; background: #ffffff; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.7); border: 1px solid #cbd5e1; color: #1e293b; position: relative;
+  }
+  .out-bar {
+    height: 34px; background: #0078d4; color: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; font-size: 11.5px; font-weight: 600;
+  }
+  .out-ribbon {
+    background: #f3f4f6; border-bottom: 1px solid #e5e7eb; padding: 6px 12px; display: flex; align-items: center; gap: 14px;
+  }
+  .btn-teams-meeting {
+    background: #464eb8; color: #fff; border-radius: 4px; padding: 4px 12px; font-size: 11.5px; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; box-shadow: 0 2px 6px rgba(70,78,184,0.3);
+  }
+
+  .out-calendar-layout { flex: 1; display: flex; background: #ffffff; }
+  .out-cal-left { width: 190px; background: #f9fafb; border-right: 1px solid #e5e7eb; padding: 12px; font-size: 11px; }
+  .out-cal-main { flex: 1; display: flex; flex-direction: column; padding: 14px; position: relative; }
+
+  /* Pop-up Meeting Invite with Teams link & Scheduling Assistant */
+  .meeting-invite-modal {
+    position: absolute; top: 12px; left: 20px; right: 20px; bottom: 12px;
+    background: #ffffff; border-radius: 6px; box-shadow: 0 16px 44px rgba(0,0,0,0.4); border: 1px solid #cbd5e1;
+    display: flex; flex-direction: column; padding: 14px; z-index: 50;
+  }
+  .mim-row { display: flex; align-items: center; border-bottom: 1px solid #e5e7eb; padding: 5px 0; font-size: 11.5px; }
+  .mim-lbl { width: 64px; font-weight: 700; color: #64748b; }
+  .mim-val { flex: 1; font-weight: 600; color: #0f172a; }
+  .teams-link-banner {
+    background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; padding: 8px 12px; margin: 10px 0; font-size: 11.5px; color: #1e3a8a; display: flex; justify-content: space-between; align-items: center;
+  }
+  .sched-assistant-grid {
+    background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 10px; margin-top: 6px;
+  }
+
+  /* =========================================================================
+     SCENE 4: ONEDRIVE (77.7s - 100.4s)
+     ========================================================================= */
+  #scene-onedrive { flex-direction: row; }
+  .exp-window {
+    flex: 1; background: #ffffff; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.7); border: 1px solid #cbd5e1; color: #1e293b; position: relative;
+  }
+  .exp-topbar { height: 34px; background: #f3f4f6; border-bottom: 1px solid #e5e7eb; display: flex; align-items: center; padding: 0 10px; gap: 10px; font-size: 11.5px; }
+  .exp-addr { flex: 1; background: #fff; border: 1px solid #d1d5db; border-radius: 4px; height: 24px; display: flex; align-items: center; padding: 0 8px; gap: 6px; font-size: 11px; }
+
+  /* =========================================================================
+     SCENE 5: MATRIX (100.4s - 125.4s)
+     ========================================================================= */
+  #scene-matrix { flex-direction: column; align-items: center; justify-content: center; }
+  .mat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; width: 100%; max-width: 1220px; margin-bottom: 14px; }
+  .mat-col { background: #1f2937; border-radius: 8px; border: 1px solid rgba(255,255,255,0.12); padding: 14px; display: flex; flex-direction: column; justify-content: space-between; }
+  .mat-col.hr-core { border: 2px solid #ef4444; background: rgba(239, 68, 68, 0.08); }
+  .mat-h { font-size: 14px; font-weight: 800; color: #fff; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+  .mat-r { font-size: 11px; font-weight: 700; color: #38bdf8; margin-bottom: 6px; text-transform: uppercase; }
+  .mat-b { font-size: 11.5px; color: #cbd5e1; line-height: 1.5; margin-bottom: 8px; }
+  .mat-ban { background: rgba(239, 68, 68, 0.2); border: 1px solid #ef4444; border-radius: 4px; padding: 5px 6px; font-size: 10px; color: #fca5a5; font-weight: 600; }
+  .sunset-bar {
+    background: #450a0a; border: 1px solid #b91c1c; border-radius: 8px; padding: 10px 18px; font-size: 13px; color: #fecaca;
+    display: flex; align-items: center; gap: 10px; max-width: 1100px; font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <div id="top-banner">
+    <div class="brand-group">
+      <div class="brand-badge">A25 HOTEL</div>
+      <div>
+        <div class="brand-title">CÔNG TY CỔ PHẦN A25 HOTEL — PHÒNG CÔNG NGHỆ THÔNG TIN</div>
+        <div class="brand-sub">Hệ thống Video Đào tạo Chuẩn hóa Microsoft 365 (Liên kết Teams - Outlook & Phân Role)</div>
+      </div>
+    </div>
+    <div class="scene-pill">
+      <div class="pulse-dot"></div>
+      <span id="scene-badge">Khởi tạo bài giảng...</span>
+    </div>
+  </div>
+
+  <!-- Cursor -->
+  <div id="virtual-cursor">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M4 3L18 10L11 12L8 19L4 3Z" fill="#ef4444" stroke="#ffffff" stroke-width="1.5"/>
+    </svg>
+  </div>
+
+  <!-- =========================================================================
+       SCENE 1: INTRO (0.0s - 18.5s)
+       ========================================================================= -->
+  <div id="scene-intro" class="scene active">
+    <div class="intro-card">
+      <div class="intro-tag">★ PHƯƠNG ÁN CHUYỂN ĐỔI SỐ NỘI BỘ NĂM 2026 ★</div>
+      <div class="intro-title">
+        HƯỚNG DẪN CHUẨN HÓA CÔNG CỤ LÀM VIỆC<br>TRÊN NỀN TẢNG <span>MICROSOFT 365</span>
+      </div>
+      <div class="intro-desc">
+        Thay thế việc trao đổi phân tán qua Zalo cá nhân; chuẩn hóa quy trình giao dịch, bảo mật dữ liệu doanh nghiệp và thiết lập Danh bạ điện tử tập trung cho toàn thể Cán bộ nhân viên Công ty Cổ phần A25 Hotel.
+      </div>
+      <div class="intro-grid">
+        <div class="ig-box">
+          <div class="icon">💬</div>
+          <div class="name">Microsoft Teams</div>
+          <div class="role">Trao đổi nội bộ & Họp</div>
+        </div>
+        <div class="ig-box">
+          <div class="icon">✉️</div>
+          <div class="name">Microsoft Outlook</div>
+          <div class="role">Thư tín công vụ & Lịch</div>
+        </div>
+        <div class="ig-box">
+          <div class="icon">☁️</div>
+          <div class="name">OneDrive 1TB</div>
+          <div class="role">Lưu trữ & Chia sẻ file</div>
+        </div>
+        <div class="ig-box" style="border-color:#ef4444; background:rgba(239,68,68,0.1);">
+          <div class="icon">📋</div>
+          <div class="name" style="color:#ef4444;">HROnline</div>
+          <div class="role">Kênh giao việc duy nhất</div>
+        </div>
+      </div>
+      <div style="font-size:11.5px; color:#94a3b8; border-top:1px solid rgba(255,255,255,0.1); padding-top:8px;">
+        Đơn vị chủ trì: Ban Phát triển & Quản lý phần mềm | Người lập: Hoàng Minh Quân | Người duyệt: Nguyễn Văn Sơn
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SCENE 2: TEAMS - PROFILE CARD & MANAGE ROLE (18.5s - 54.1s)
+       ========================================================================= -->
+  <div id="scene-teams" class="scene">
+    <div class="app-container">
+      <div class="teams-top-nav">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-weight:700; font-size:12px; color:#a1a1aa;">Microsoft Teams</span>
+          <span style="font-size:11px; color:#71717a;">— A25 Hotel Tenant</span>
+        </div>
+        <div class="search-box-sim" id="t-search">
+          <span>🔍</span>
+          <span id="t-search-txt">Search (Ctrl+E)...</span>
+        </div>
+        <div style="font-size:11px; font-weight:700; color:#38bdf8;">quan.hoang@a25hotel.com</div>
+      </div>
+
+      <div class="teams-layout">
+        <!-- Rail -->
+        <div class="teams-rail">
+          <div class="rail-btn"><span style="font-size:16px;">🔔</span><span>Activity</span></div>
+          <div class="rail-btn active"><span style="font-size:16px;">💬</span><span>Chat</span></div>
+          <div class="rail-btn"><span style="font-size:16px;">👥</span><span>Teams</span></div>
+          <div class="rail-btn"><span style="font-size:16px;">📅</span><span>Calendar</span></div>
+          <div class="rail-btn"><span style="font-size:16px;">📞</span><span>Calls</span></div>
+        </div>
+
+        <div class="teams-content-pane">
+          <div class="teams-split">
+            <!-- Channels List -->
+            <div class="teams-chans">
+              <div class="team-name-hdr">
+                <span>🏢 Ban CNTT — A25 Hotel</span>
+                <span id="btn-team-more" style="cursor:pointer; color:#7f85f5; font-size:14px;">⋯</span>
+              </div>
+              <div class="chan-item active"># Kế hoạch M365 (Chung)</div>
+              <div class="chan-item"># Triển khai Văn phòng</div>
+              <div class="chan-item"># Hỗ trợ Chi nhánh KS</div>
+
+              <div class="team-name-hdr" style="margin-top:14px;">
+                <span>👥 Khối Văn phòng A25</span>
+              </div>
+              <div class="chan-item"># Thông báo Tập đoàn</div>
+              <div class="chan-item"># Phòng Kinh doanh</div>
+            </div>
+
+            <!-- Main Conversation / Action Area -->
+            <div class="teams-main-view">
+              <div style="font-size:13px; font-weight:700; border-bottom:1px solid #333; padding-bottom:8px; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center;">
+                <span>Kênh: # Kế hoạch M365 (Chung)</span>
+                <span style="font-size:11px; color:#38bdf8; background:rgba(56,189,248,0.1); padding:2px 8px; border-radius:4px;">
+                  🔒 Bảo mật nội bộ A25
+                </span>
+              </div>
+
+              <div style="background:#26262b; border:1px solid #383840; border-radius:6px; padding:10px 12px; margin-bottom:10px;">
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                  <div style="width:26px; height:26px; border-radius:50%; background:#b91c1c; font-weight:800; font-size:11px; display:flex; align-items:center; justify-content:center;">QS</div>
+                  <span style="font-weight:700; font-size:12px; color:#7f85f5;">Nguyễn Văn Sơn (Trưởng ban CNTT)</span>
+                  <span style="font-size:10px; color:#71717a;">09:15 AM</span>
+                </div>
+                <div style="font-size:12px; color:#d4d4d8;">
+                  @Hoàng Minh Quân: Phương án chuẩn hóa M365 cần phân định rõ Role quản lý (Owner) và nhân viên (Member) trên Teams và đồng bộ lịch họp với Outlook nhé.
+                </div>
+              </div>
+
+              <div style="background:#2d2e3d; border:1px solid #50548a; border-radius:6px; padding:10px 12px; margin-left:24px;">
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                  <div style="width:26px; height:26px; border-radius:50%; background:#0284c7; font-weight:800; font-size:11px; display:flex; align-items:center; justify-content:center;">HQ</div>
+                  <span style="font-weight:700; font-size:12px; color:#38bdf8;">Hoàng Minh Quân (Trợ lý CNTT)</span>
+                  <span style="font-size:10px; color:#71717a;">09:18 AM</span>
+                </div>
+                <div style="font-size:12px; color:#d4d4d8;">
+                  Dạ vâng anh Sơn! Em đang mở Profile Card để kiểm tra cây sơ đồ phân cấp và bảng phân Role cho Khối Văn phòng đây ạ.
+                </div>
+              </div>
+
+              <!-- POPUP 1: Profile Card with Role & Org Chart -->
+              <div class="profile-card-sim" id="pc-sim">
+                <div class="pc-head">
+                  <div class="pc-avatar">QS</div>
+                  <div class="pc-meta">
+                    <h4>Nguyễn Văn Sơn</h4>
+                    <p>Trưởng ban Phát triển & Quản lý phần mềm</p>
+                    <span class="pc-role-pill">ROLE: TRƯỞNG BỘ PHẬN (MANAGER)</span>
+                  </div>
+                </div>
+                <div class="pc-tabs">
+                  <div class="pct">Contact</div>
+                  <div class="pct active">Organization (Sơ đồ tổ chức)</div>
+                </div>
+                <div class="pc-org">
+                  <div class="pc-node mgr">
+                    <span>▲ Ban Giám đốc A25 Hotel</span>
+                    <span style="font-size:9.5px; background:#1e3a8a; color:#fff; padding:1px 5px; border-radius:3px;">Cấp phê duyệt</span>
+                  </div>
+                  <div class="pc-node curr">
+                    <span>★ Nguyễn Văn Sơn (Trưởng ban CNTT)</span>
+                    <span style="font-size:9.5px; background:#7f85f5; color:#fff; padding:1px 5px; border-radius:3px;">Quản lý trực tiếp (Manager)</span>
+                  </div>
+                  <div class="pc-node sub">
+                    <span>▼ Hoàng Minh Quân (Trợ lý Phòng CNTT)</span>
+                    <span style="font-size:9.5px; background:#16a34a; color:#fff; padding:1px 5px; border-radius:3px;">Role: Trợ lý nghiệp vụ</span>
+                  </div>
+                  <div class="pc-node sub">
+                    <span>▼ Châu Tuấn (Chuyên viên phần mềm)</span>
+                    <span style="font-size:9.5px; background:#16a34a; color:#fff; padding:1px 5px; border-radius:3px;">Role: Chuyên viên</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- POPUP 2: Manage Team (Phân Role: Owner vs Member) -->
+              <div class="manage-team-modal" id="mt-modal">
+                <div class="mtm-hdr">
+                  <span>⚙️ Cài đặt nhóm & Phân quyền Vai trò (Manage Team — Roles): Ban CNTT A25</span>
+                  <span style="font-size:12px; color:#38bdf8;">Đồng bộ Entra ID</span>
+                </div>
+                <table class="mtm-table">
+                  <thead>
+                    <tr>
+                      <th>Họ và tên</th>
+                      <th>Chức danh (Job Title)</th>
+                      <th>Hòm thư (@a25hotel.com)</th>
+                      <th>Vai trò trong Teams (Role)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Nguyễn Văn Sơn</strong></td>
+                      <td>Trưởng ban PT & QLPM</td>
+                      <td>son.nguyen@a25hotel.com</td>
+                      <td><span class="role-select role-owner">👑 Owner (Chủ sở hữu nhóm)</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Hoàng Minh Quân</strong></td>
+                      <td>Trợ lý Phòng CNTT</td>
+                      <td>quan.hoang@a25hotel.com</td>
+                      <td><span class="role-select role-member">👤 Member (Thành viên)</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Châu Tuấn</strong></td>
+                      <td>Chuyên viên phần mềm</td>
+                      <td>tuan.chau@a25hotel.com</td>
+                      <td><span class="role-select role-member">👤 Member (Thành viên)</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div style="margin-top:auto; background:#1e293b; border:1px solid #38bdf8; border-radius:6px; padding:8px 12px; font-size:11px; color:#38bdf8;">
+                  ✓ Phân quyền chuẩn mực: Cấp Quản lý giữ quyền <strong>Owner</strong> để duyệt thành viên và bảo mật kênh; Nhân viên giữ quyền <strong>Member</strong> để phối hợp tác nghiệp.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidecard -->
+    <div class="info-sidebar">
+      <div>
+        <div class="is-step">Module 01 / 04</div>
+        <div class="is-title">Đồng bộ Teams - Outlook & Phân Role</div>
+        <div class="is-desc">
+          Toàn bộ nhân sự A25 Hotel được quản lý danh bạ tập trung trên Entra ID (GAL), đồng bộ chức danh và vai trò giữa Teams và Outlook.
+        </div>
+        <div class="is-box">✓ Profile Card hiển thị đúng Role, Chức vụ và Sơ đồ tổ chức</div>
+        <div class="is-box">✓ Quản lý trực tiếp (Manager) được định danh rõ ràng</div>
+        <div class="is-box">✓ Phân quyền Teams: Cấp Quản lý là Owner, Nhân viên là Member</div>
+      </div>
+      <div class="is-warn">
+        ⚠️ TUYỆT ĐỐI KHÔNG dùng Teams để giao việc chính thức thay thế HROnline.
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SCENE 3: OUTLOOK - TEAMS MEETING & SCHEDULING (54.1s - 77.7s)
+       ========================================================================= -->
+  <div id="scene-outlook" class="scene">
+    <div class="out-app">
+      <!-- Titlebar -->
+      <div class="out-bar">
+        <span>Outlook Calendar — quan.hoang@a25hotel.com</span>
+        <span>A25 Hotel Microsoft 365</span>
+      </div>
+
+      <!-- Ribbon with Teams Meeting Button -->
+      <div class="out-ribbon">
+        <span style="font-size:12px; font-weight:700; color:#374151;">Home / Calendar</span>
+        <div class="btn-teams-meeting" id="btn-teams-meet">
+          <span>📹</span>
+          <span>+ New Teams Meeting</span>
+        </div>
+        <span style="font-size:11px; color:#6b7280; margin-left:auto;">📅 Scheduling Assistant Active</span>
+      </div>
+
+      <div class="out-calendar-layout">
+        <div class="out-cal-left">
+          <div style="font-weight:700; margin-bottom:8px; color:#1e3a8a;">Lịch làm việc A25</div>
+          <div style="color:#0078d4; margin-bottom:4px; font-weight:600;">✓ Calendar — Cá nhân</div>
+          <div style="color:#6b7280; margin-bottom:4px;">✓ Lịch Ban Giám đốc</div>
+          <div style="color:#6b7280; margin-bottom:4px;">✓ Lịch Phòng CNTT</div>
+        </div>
+
+        <div class="out-cal-main">
+          <!-- Pop-up Meeting Invite with Teams link & Scheduling Assistant -->
+          <div class="meeting-invite-modal">
+            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #e5e7eb; padding-bottom:6px; margin-bottom:8px;">
+              <span style="font-weight:700; font-size:13px; color:#1e3a8a;">
+                📅 Họp Thẩm duyệt Phương án chuẩn hóa Microsoft 365 A25 Hotel
+              </span>
+              <button style="background:#0078d4; color:#fff; border:none; border-radius:4px; padding:4px 14px; font-weight:700; font-size:11px; cursor:pointer;" id="btn-send-inv">
+                Send Invitation
+              </button>
+            </div>
+
+            <div class="mim-row">
+              <div class="mim-lbl">To (Bắt buộc):</div>
+              <div class="mim-val">Ban Giám đốc &lt;giamdoc.kd@a25hotel.com&gt;; Nguyễn Văn Sơn &lt;son.nguyen@a25hotel.com&gt;</div>
+            </div>
+            <div class="mim-row">
+              <div class="mim-lbl">Thời gian:</div>
+              <div class="mim-val" style="color:#16a34a; font-weight:700;">
+                14:00 - 15:00 • Thứ Ba, 24/11/2026 (Khung giờ tối ưu - RẢNH)
+              </div>
+            </div>
+
+            <!-- Authentic Teams Link Banner in Outlook -->
+            <div class="teams-link-banner" id="t-banner">
+              <div>
+                <strong style="color:#464eb8;">📹 Microsoft Teams Meeting:</strong>
+                <div>Link họp trực tuyến: <span style="text-decoration:underline; color:#0078d4;">teams.microsoft.com/meet/a25-m365-review</span></div>
+              </div>
+              <span style="background:#464eb8; color:#fff; padding:3px 8px; border-radius:4px; font-size:10px; font-weight:700;">
+                Tự động sinh bởi Outlook
+              </span>
+            </div>
+
+            <!-- Scheduling Assistant Free/Busy Grid -->
+            <div class="sched-assistant-grid">
+              <div style="font-size:11px; font-weight:700; color:#1e3a8a; margin-bottom:6px; display:flex; justify-content:space-between;">
+                <span>Trợ lý xếp lịch (Scheduling Assistant) — Kiểm tra lịch bận rảnh:</span>
+                <span style="color:#16a34a;">✓ Không có xung đột lịch</span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:4px; font-size:10.5px;">
+                <div style="display:flex; align-items:center; gap:6px;">
+                  <span style="width:120px; font-weight:600;">Ban Giám đốc:</span>
+                  <span style="background:#fecaca; color:#991b1b; padding:2px 6px; border-radius:3px;">09:00 (Bận)</span>
+                  <span style="background:#fecaca; color:#991b1b; padding:2px 6px; border-radius:3px;">10:30 (Bận)</span>
+                  <span style="background:#bbf7d0; color:#166534; font-weight:700; padding:2px 8px; border-radius:3px; border:1px solid #16a34a;">14:00 - 15:00 (RẢNH)</span>
+                  <span style="background:#fecaca; color:#991b1b; padding:2px 6px; border-radius:3px;">16:00 (Bận)</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:6px;">
+                  <span style="width:120px; font-weight:600;">Nguyễn Văn Sơn:</span>
+                  <span style="background:#bbf7d0; color:#166534; padding:2px 6px; border-radius:3px;">09:00</span>
+                  <span style="background:#fecaca; color:#991b1b; padding:2px 6px; border-radius:3px;">10:30 (Họp)</span>
+                  <span style="background:#bbf7d0; color:#166534; font-weight:700; padding:2px 8px; border-radius:3px; border:1px solid #16a34a;">14:00 - 15:00 (RẢNH)</span>
+                  <span style="background:#bbf7d0; color:#166534; padding:2px 6px; border-radius:3px;">16:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidecard -->
+    <div class="info-sidebar">
+      <div>
+        <div class="is-step">Module 02 / 04</div>
+        <div class="is-title">Outlook: Teams Meeting & Lịch công vụ</div>
+        <div class="is-desc">
+          Bấm nút "New Teams Meeting" trên Outlook Calendar để tự động tạo cuộc họp video và link họp Teams đồng bộ trực tiếp.
+        </div>
+        <div class="is-box">✓ 1 chạm tạo link họp Teams trong giấy mời Outlook</div>
+        <div class="is-box">✓ Scheduling Assistant kiểm tra giờ rảnh Ban Giám đốc</div>
+        <div class="is-box">✓ Lịch họp hiển thị đồng thời trên cả Outlook và Teams</div>
+      </div>
+      <div class="is-warn">
+        ⚠️ KHÔNG dùng email gửi trao đổi ngắn vụn vặt gây spam hòm thư nội bộ.
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SCENE 4: ONEDRIVE (77.7s - 100.4s)
+       ========================================================================= -->
+  <div id="scene-onedrive" class="scene">
+    <div class="exp-window">
+      <div class="exp-topbar">
+        <span>+ New ▾</span>
+        <span>Cut</span>
+        <span>Copy</span>
+        <span style="font-weight:700; color:#0078d4;">Share</span>
+        <span>Delete</span>
+        <div class="exp-addr">
+          <span>☁️ OneDrive - Công ty Cổ phần A25 Hotel</span>
+          <span>› 01_DuAn_CongNghe</span>
+        </div>
+      </div>
+
+      <div style="flex:1; display:flex;">
+        <div style="width:210px; background:#f9fafb; border-right:1px solid #e5e7eb; padding:12px; font-size:11px;">
+          <div style="font-weight:700; margin-bottom:6px;">Home</div>
+          <div style="color:#0078d4; font-weight:700; margin-bottom:4px;">☁️ OneDrive - A25 Hotel</div>
+          <div style="margin-left:12px; margin-bottom:3px;">📁 01_DuAn_CongNghe</div>
+          <div style="margin-left:12px; margin-bottom:3px;">📁 02_HopDong_BieuMau</div>
+          <div style="margin-top:8px;">💻 This PC</div>
+        </div>
+
+        <div style="flex:1; padding:14px; position:relative;">
+          <table style="width:100%; border-collapse:collapse; font-size:12px;">
+            <thead>
+              <tr style="border-bottom:1px solid #e5e7eb; color:#6b7280; font-size:11px;">
+                <th style="text-align:left; padding:6px;">Tên tệp tin / Thư mục</th>
+                <th style="text-align:left; padding:6px;">Trạng thái (Status)</th>
+                <th style="text-align:left; padding:6px;">Ngày sửa</th>
+                <th style="text-align:left; padding:6px;">Kích thước</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:8px 6px;">📁 01_BaoCao_KeHoach</td>
+                <td style="color:#0284c7; font-weight:700;">☁️ Online-only</td>
+                <td>20/11/2026</td>
+                <td>—</td>
+              </tr>
+              <tr style="background:#eff6ff;" id="row-onedrive-file">
+                <td style="padding:8px 6px;">📄 <strong>Bao_cao_Phuong_an_Chuan_hoa_M365_A25.docx</strong></td>
+                <td style="color:#16a34a; font-weight:700;">🟢 Local Sync</td>
+                <td>20/11/2026</td>
+                <td>1.33 MB</td>
+              </tr>
+              <tr>
+                <td style="padding:8px 6px;">📊 Du_toan_Ngan_sach_Ban_quyen.xlsx</td>
+                <td style="color:#16a34a; font-weight:700;">🟢 Local Sync</td>
+                <td>19/11/2026</td>
+                <td>420 KB</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Share Dialog -->
+          <div style="position:absolute; top:40px; right:30px; width:360px; background:#fff; border-radius:8px; box-shadow:0 16px 40px rgba(0,0,0,0.3); border:1px solid #cbd5e1; padding:16px;" id="box-share">
+            <div style="font-size:13px; font-weight:700; margin-bottom:6px;">Chia sẻ: Bao_cao_Phuong_an_Chuan_hoa_M365_A25.docx</div>
+            <div style="font-size:11px; color:#6b7280; margin-bottom:6px;">Chỉ định quyền truy cập an toàn trong nội bộ:</div>
+            <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:5px; padding:7px 10px; font-size:11.5px; font-weight:600; color:#1e3a8a; margin-bottom:10px;">
+              🔒 People in A25 Hotel with the link can view
+            </div>
+            <button style="background:#0078d4; color:white; border:none; border-radius:5px; padding:7px 12px; font-size:11.5px; font-weight:700; width:100%; cursor:pointer;" id="btn-share-copy">
+              ✓ Sao chép liên kết bảo mật (Copy Link)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidecard -->
+    <div class="info-sidebar">
+      <div>
+        <div class="is-step">Module 03 / 04</div>
+        <div class="is-title">OneDrive for Business: 1TB Lưu trữ An toàn</div>
+        <div class="is-desc">
+          Giải quyết triệt để rủi ro file Zalo hết hạn hoặc mất tài liệu khi hỏng máy tính cá nhân.
+        </div>
+        <div class="is-box">✓ 1TB dung lượng đám mây cho mỗi nhân viên</div>
+        <div class="is-box">✓ Tự động đồng bộ Desktop & Documents</div>
+        <div class="is-box">✓ Phân quyền Xem/Sửa chính xác, chống lộ dữ liệu</div>
+        <div class="is-box">✓ Version History khôi phục dữ liệu khi sửa nhầm</div>
+      </div>
+      <div class="is-warn">
+        ⚠️ NGHIÊM CẤM lưu tài liệu cơ mật trên Google Drive hoặc Zalo cá nhân.
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SCENE 5: MATRIX (100.4s - 125.4s)
+       ========================================================================= -->
+  <div id="scene-matrix" class="scene">
+    <div class="mat-grid">
+      <div class="mat-col">
+        <div>
+          <div class="mat-h">💬 Microsoft Teams</div>
+          <div class="mat-r">Trao đổi nội bộ</div>
+          <div class="mat-b">
+            • Chat 1-1 và chat nhóm phòng ban.<br>
+            • Họp video, chia sẻ màn hình.<br>
+            • Xử lý sự vụ nhanh hằng ngày.
+          </div>
+        </div>
+        <div class="mat-ban">❌ Không gửi văn bản pháp lý, không giao việc chính thức.</div>
+      </div>
+
+      <div class="mat-col">
+        <div>
+          <div class="mat-h">✉️ Microsoft Outlook</div>
+          <div class="mat-r">Thư tín công vụ</div>
+          <div class="mat-b">
+            • Email gửi Khách hàng & Đối tác.<br>
+            • Thông báo chỉ đạo từ Ban Giám đốc.<br>
+            • Quản lý Lịch công vụ & Mời họp.
+          </div>
+        </div>
+        <div class="mat-ban">❌ Không gửi việc vụn vặt gây spam hòm thư.</div>
+      </div>
+
+      <div class="mat-col">
+        <div>
+          <div class="mat-h">☁️ OneDrive 1TB</div>
+          <div class="mat-r">Lưu trữ Dữ liệu</div>
+          <div class="mat-b">
+            • Lưu trữ tập trung 100% file công việc.<br>
+            • Chia sẻ link phân quyền an toàn.<br>
+            • Thu hồi tức thì khi nhân viên nghỉ việc.
+          </div>
+        </div>
+        <div class="mat-ban">❌ Cấm lưu dữ liệu mật trên ổ đĩa máy cá nhân.</div>
+      </div>
+
+      <div class="mat-col hr-core">
+        <div>
+          <div class="mat-h" style="color:#ef4444;">📋 HROnline (Cốt lõi)</div>
+          <div class="mat-r" style="color:#f87171;">Giao việc & Duyệt đơn</div>
+          <div class="mat-b">
+            • KÊNH DUY NHẤT để giao việc và theo dõi Deadline hoàn thành.<br>
+            • KÊNH DUY NHẤT duyệt nghỉ phép, thanh toán, phiếu yêu cầu CNTT.
+          </div>
+        </div>
+        <div class="mat-ban" style="background:#b91c1c; color:#fff;">
+          ⛔ TUYỆT ĐỐI KHÔNG làm form phê duyệt trên Microsoft Forms/Automate!
+        </div>
+      </div>
+    </div>
+
+    <div class="sunset-bar">
+      <span style="font-size:20px;">🔔</span>
+      <div>
+        <div style="font-weight:800; color:#fca5a5; margin-bottom:2px;">QUY TẮC ĐÓNG NHÓM ZALO CÔNG VIỆC BẮT BUỘC:</div>
+        <div>Sau 07 ngày làm quen trên Teams, Trưởng bộ phận bắt buộc ấn định ngày đóng dứt điểm nhóm Zalo công việc văn phòng. TUYỆT ĐỐI KHÔNG DUY TRÌ SONG SONG HAI KÊNH!</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div id="bottom-bar">
+    <div id="progress-track"><div id="progress-fill"></div></div>
+    <div class="bar-info">
+      <div id="subtitle-text">
+        <span class="voice-tag">🎙️ GIỌNG NEURAL CHUẨN</span>
+        <span id="sub-content">Đang khởi động chương trình đào tạo chuẩn hóa Microsoft 365...</span>
+      </div>
+      <div id="timer-text">00:00 / 02:05</div>
+    </div>
+  </div>
+
+  <script>
+    // Exact timeline matching edge-tts durations:
+    // 01_intro: 18.5s (end: 18.5s)
+    // 02_teams_outlook_role: 35.62s (end: 54.12s)
+    // 03_outlook_teams_meeting: 23.59s (end: 77.71s)
+    // 04_onedrive_share: 22.66s (end: 100.37s)
+    // 05_matrix_zalo: 25.03s (end: 125.40s)
+    const scenes = [
+      {
+        id: 'scene-intro', start: 0.0, end: 18.5,
+        badge: 'GIỚI THIỆU TỔNG QUAN',
+        sub: 'Kính chào toàn thể Cán bộ nhân viên Công ty Cổ phần A25 Hotel. Thực hiện chỉ đạo của Ban Giám đốc, Phòng CNTT triển khai phương án chuẩn hóa Microsoft 365...'
+      },
+      {
+        id: 'scene-teams', start: 18.5, end: 54.12,
+        badge: 'MODULE 1: TEAMS & PHÂN ROLE (ENTRA ID)',
+        sub: 'Điểm mấu chốt đầu tiên là liên kết đồng bộ Teams và Outlook trên Entra ID: Thẻ Profile Card hiển thị Role, Sơ đồ tổ chức phân cấp Manager và phân quyền Owner / Member...'
+      },
+      {
+        id: 'scene-outlook', start: 54.12, end: 77.71,
+        badge: 'MODULE 2: OUTLOOK — TEAMS MEETING & SCHEDULING',
+        sub: 'Tiếp theo là liên kết lịch họp trực tiếp giữa Outlook và Teams: Bấm nút Teams Meeting để tạo cuộc họp video và dùng Scheduling Assistant kiểm tra giờ rảnh Ban Giám đốc...'
+      },
+      {
+        id: 'scene-onedrive', start: 77.71, end: 100.37,
+        badge: 'MODULE 3: ONEDRIVE 1TB AN TOÀN',
+        sub: 'Phân hệ thứ ba là kho lưu trữ đám mây OneDrive 1TB: Tự động sao lưu dữ liệu máy tính, phân quyền chia sẻ an toàn nội bộ và khôi phục phiên bản cũ...'
+      },
+      {
+        id: 'scene-matrix', start: 100.37, end: 125.40,
+        badge: 'MODULE 4: RANH GIỚI & ĐÓNG ZALO',
+        sub: 'Cuối cùng là nguyên tắc ranh giới: HROnline là kênh duy nhất giao việc và phê duyệt; sau 7 ngày làm quen trên Teams, Trưởng bộ phận bắt buộc đóng nhóm Zalo!'
+      }
+    ];
+
+    const TOTAL_DURATION = 125.40;
+    let startTime = Date.now();
+    const cursor = document.getElementById('virtual-cursor');
+
+    const pcSim = document.getElementById('pc-sim');
+    const mtModal = document.getElementById('mt-modal');
+    const tSearchTxt = document.getElementById('t-search-txt');
+    const btnSendInv = document.getElementById('btn-send-inv');
+
+    function update() {
+      const elapsed = (Date.now() - startTime) / 1000;
+      const progress = Math.min(100, (elapsed / TOTAL_DURATION) * 100);
+      document.getElementById('progress-fill').style.width = progress + '%';
+
+      const curM = String(Math.floor(elapsed / 60)).padStart(2, '0');
+      const curS = String(Math.floor(elapsed % 60)).padStart(2, '0');
+      document.getElementById('timer-text').innerText = `${curM}:${curS} / 02:05`;
+
+      const current = scenes.find(s => elapsed >= s.start && elapsed < s.end) || scenes[scenes.length - 1];
+
+      scenes.forEach(s => {
+        const el = document.getElementById(s.id);
+        if (s.id === current.id) {
+          if (!el.classList.contains('active')) {
+            document.querySelectorAll('.scene').forEach(sc => sc.classList.remove('active'));
+            el.classList.add('active');
+          }
+        }
+      });
+
+      document.getElementById('scene-badge').innerText = current.badge;
+      document.getElementById('sub-content').innerText = current.sub;
+
+      // Realistic step-by-step cursor movements & modal toggles
+      if (current.id === 'scene-teams') {
+        const tSec = elapsed - 18.5;
+        // Step 1: Search Nguyễn Văn Sơn (0 - 8s)
+        if (tSec < 8) {
+          cursor.style.left = '400px';
+          cursor.style.top = '70px';
+          tSearchTxt.innerText = 'Nguyễn Văn Sơn (Trưởng ban)';
+          pcSim.classList.remove('visible');
+          mtModal.classList.remove('visible');
+        }
+        // Step 2: Open Profile Card & Org Chart (8 - 20s)
+        else if (tSec >= 8 && tSec < 20) {
+          cursor.style.left = '240px';
+          cursor.style.top = '220px';
+          pcSim.classList.add('visible');
+          mtModal.classList.remove('visible');
+        }
+        // Step 3: Click '...' on Team and Open Manage Team: Roles (Owner vs Member) (20 - 35.6s)
+        else {
+          cursor.style.left = '320px';
+          cursor.style.top = '115px';
+          pcSim.classList.remove('visible');
+          mtModal.classList.add('visible');
+        }
+      } else if (current.id === 'scene-outlook') {
+        const oSec = elapsed - 54.12;
+        // Step 1: Click "New Teams Meeting" (0 - 8s)
+        if (oSec < 8) {
+          cursor.style.left = '280px';
+          cursor.style.top = '78px'; // Clicking + New Teams Meeting button
+        }
+        // Step 2: Inspect Scheduling Assistant Grid (8 - 18s)
+        else if (oSec >= 8 && oSec < 18) {
+          cursor.style.left = '520px';
+          cursor.style.top = '360px'; // Hovering on 14:00 - 15:00 Free slot
+        }
+        // Step 3: Click "Send Invitation" (18 - 23.6s)
+        else {
+          cursor.style.left = '870px';
+          cursor.style.top = '120px'; // Clicking Send Invitation
+          btnSendInv.innerText = '✓ Sent (Đã gửi giấy mời kèm link Teams)';
+          btnSendInv.style.background = '#16a34a';
+        }
+      } else if (current.id === 'scene-onedrive') {
+        const dSec = elapsed - 77.71;
+        if (dSec < 10) {
+          cursor.style.left = '420px';
+          cursor.style.top = '180px';
+        } else {
+          cursor.style.left = '760px';
+          cursor.style.top = '240px';
+        }
+      } else {
+        cursor.style.left = '-100px';
+        cursor.style.top = '-100px';
+      }
+
+      if (elapsed < TOTAL_DURATION) {
+        requestAnimationFrame(update);
+      }
+    }
+
+    requestAnimationFrame(update);
+  </script>
+</body>
+</html>

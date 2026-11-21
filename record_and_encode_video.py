@@ -1,0 +1,270 @@
+import os
+import glob
+import subprocess
+import time
+import imageio_ffmpeg
+from playwright.sync_api import sync_playwright
+
+HTML_PATH = r"c:\Users\Admin\Desktop\tester\create_video_animation.html"
+TEMP_DIR = r"c:\Users\Admin\Desktop\tester\temp_vid_record"
+MASTER_AUDIO = r"c:\Users\Admin\Desktop\tester\audio_narration_edge\master_narration_edge.m4a"
+FINAL_MP4 = r"c:\Users\Admin\Desktop\tester\Video_Huong_Dan_Chuan_Hoa_Microsoft_365_A25_Hotel.mp4"
+PLAYER_HTML = r"c:\Users\Admin\Desktop\tester\Trung_Tam_Video_Huong_Dan_M365_A25_Hotel.html"
+
+os.makedirs(TEMP_DIR, exist_ok=True)
+for f in glob.glob(os.path.join(TEMP_DIR, "*")):
+    try:
+        os.remove(f)
+    except Exception:
+        pass
+
+ffmpeg_exe = imageio_ffmpeg.get_ffmpeg_exe()
+print("Using FFMPEG binary at:", ffmpeg_exe)
+
+if not os.path.exists(MASTER_AUDIO):
+    raise RuntimeError("Master audio narration not found: " + MASTER_AUDIO)
+
+print("Starting Playwright screen recording with authentic UI...")
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=True)
+    ctx = browser.new_context(
+        record_video_dir=TEMP_DIR,
+        record_video_size={"width": 1280, "height": 720},
+        viewport={"width": 1280, "height": 720}
+    )
+    page = ctx.new_page()
+    page.goto(f"file:///{HTML_PATH.replace(os.sep, '/')}")
+    
+    # Wait for the full 125.4-second sequence + 2s buffer = 127.5 seconds
+    print("Recording animation timeline (127.5 seconds)...")
+    page.wait_for_timeout(127500)
+    
+    ctx.close()
+    browser.close()
+
+# 2. Locate recorded webm
+recorded_webms = glob.glob(os.path.join(TEMP_DIR, "*.webm"))
+if not recorded_webms:
+    raise RuntimeError("No recorded video found in " + TEMP_DIR)
+
+input_webm = recorded_webms[0]
+print("Recorded WEBM file:", input_webm, f"({os.path.getsize(input_webm)} bytes)")
+
+# 3. Merge Video with Master Audio Narration via FFMPEG
+print("Encoding to H.264 MP4 with synchronized Neural Vietnamese Audio Narration...")
+cmd = [
+    ffmpeg_exe,
+    "-y",
+    "-i", input_webm,
+    "-i", MASTER_AUDIO,
+    "-c:v", "libx264",
+    "-preset", "medium",
+    "-crf", "22",
+    "-pix_fmt", "yuv420p",
+    "-c:a", "aac",
+    "-b:a", "192k",
+    "-shortest",
+    "-movflags", "+faststart",
+    FINAL_MP4
+]
+
+res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+if res.returncode != 0:
+    print("FFMPEG stderr:", res.stderr)
+    raise RuntimeError("FFMPEG failed with code " + str(res.returncode))
+
+print("SUCCESS: Generated final MP4 with voiceover at:", FINAL_MP4)
+print("File size:", os.path.getsize(FINAL_MP4), "bytes")
+
+# 4. Generate Interactive Video Player HTML
+print("Updating Interactive Video Player HTML...")
+player_content = f"""<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trung Tâm Video Đào Tạo Chuẩn Hóa Microsoft 365 (Neural Audio & Phân Role) — A25 Hotel</title>
+<style>
+  * {{ box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }}
+  body {{ background: #0f172a; color: #f8fafc; min-height: 100vh; display: flex; flex-direction: column; }}
+  
+  header {{
+    background: linear-gradient(90deg, #1e3a8a, #0f172a);
+    border-bottom: 2px solid #b91c1c;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }}
+  .logo-area {{ display: flex; align-items: center; gap: 16px; }}
+  .badge-a25 {{ background: #b91c1c; color: white; padding: 6px 12px; border-radius: 6px; font-weight: 800; font-size: 16px; }}
+  .header-titles h1 {{ font-size: 18px; font-weight: 800; color: #fff; }}
+  .header-titles p {{ font-size: 13px; color: #94a3b8; }}
+
+  .main-container {{
+    max-width: 1280px; width: 100%; margin: 24px auto; padding: 0 20px; display: grid; grid-template-columns: 2.3fr 1fr; gap: 24px;
+  }}
+
+  .video-card {{
+    background: #1e293b; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  }}
+  video {{ width: 100%; display: block; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); }}
+  
+  .video-meta {{ padding: 20px; }}
+  .video-meta h2 {{ font-size: 20px; font-weight: 700; color: #f1f5f9; margin-bottom: 8px; }}
+  .video-meta p {{ font-size: 14px; color: #cbd5e1; line-height: 1.6; margin-bottom: 16px; }}
+  
+  .tags-row {{ display: flex; gap: 10px; flex-wrap: wrap; }}
+  .tag {{ background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }}
+  .tag.red {{ background: rgba(239, 68, 68, 0.15); color: #fca5a5; border-color: rgba(239, 68, 68, 0.3); }}
+  .tag.green {{ background: rgba(34, 197, 94, 0.15); color: #86efac; border-color: rgba(34, 197, 94, 0.3); }}
+
+  .playlist-card {{
+    background: #1e293b; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); padding: 20px;
+    display: flex; flex-direction: column; gap: 12px;
+  }}
+  .playlist-card h3 {{ font-size: 16px; font-weight: 700; color: #38bdf8; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }}
+  
+  .chapter-item {{
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 12px;
+    cursor: pointer; transition: all 0.2s ease; display: flex; gap: 12px; align-items: center;
+  }}
+  .chapter-item:hover {{ background: rgba(56, 189, 248, 0.1); border-color: #38bdf8; }}
+  .chap-time {{ font-size: 11.5px; font-weight: 700; color: #fef08a; background: rgba(0,0,0,0.4); padding: 4px 8px; border-radius: 4px; }}
+  .chap-info h4 {{ font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 2px; }}
+  .chap-info p {{ font-size: 11px; color: #94a3b8; }}
+
+  .action-buttons {{ margin-top: auto; display: flex; flex-direction: column; gap: 10px; }}
+  .btn-download {{
+    display: block; text-align: center; text-decoration: none; background: #b91c1c; color: #fff; font-weight: 700;
+    padding: 12px; border-radius: 8px; font-size: 14px; transition: background 0.2s;
+  }}
+  .btn-download:hover {{ background: #991b1b; }}
+  .btn-doc {{
+    display: block; text-align: center; text-decoration: none; background: #0078d4; color: #fff; font-weight: 700;
+    padding: 12px; border-radius: 8px; font-size: 14px; transition: background 0.2s;
+  }}
+  .btn-doc:hover {{ background: #005a9e; }}
+
+  footer {{
+    margin-top: auto; background: #0b1222; border-top: 1px solid rgba(255,255,255,0.08); padding: 16px 32px;
+    text-align: center; font-size: 12px; color: #64748b;
+  }}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <div class="badge-a25">A25 HOTEL</div>
+    <div class="header-titles">
+      <h1>HỌC VIỆN ĐÀO TẠO NỘI BỘ — CÔNG NGHỆ THÔNG TIN A25</h1>
+      <p>Video Hướng Dẫn Thao Tác Chuẩn Hóa Microsoft 365 (Giọng Neural Microsoft & Phân Role)</p>
+    </div>
+  </div>
+  <div style="font-size:13px; font-weight:700; color:#38bdf8;">
+    Hạn trình duyệt: 25/11/2026
+  </div>
+</header>
+
+<div class="main-container">
+  <div class="video-card">
+    <video id="mainVideo" controls autoplay>
+      <source src="Video_Huong_Dan_Chuan_Hoa_Microsoft_365_A25_Hotel.mp4" type="video/mp4">
+      Trình duyệt của bạn không hỗ trợ thẻ video.
+    </video>
+    <div class="video-meta">
+      <h2>Video Hướng Dẫn: Liên Kết Teams - Outlook, Phân Role (Owner/Member) & Trợ Lý Xếp Lịch</h2>
+      <p>
+        Video mô phỏng chi tiết các thao tác thực hành: 
+        <strong>Liên kết Teams và Outlook</strong> qua Entra ID; tra cứu <strong>Profile Card hiển thị đúng Role và Sơ đồ tổ chức (Manager)</strong>; 
+        <strong>Cài đặt phân quyền nhóm (Manage Team Roles)</strong> phân rõ Chủ sở hữu (Owner) cho Lãnh đạo và Thành viên (Member) cho nhân sự; 
+        Tạo <strong>New Teams Meeting ngay trong Outlook Calendar</strong> và sử dụng <strong>Scheduling Assistant</strong> chọn giờ tối ưu (14:00 - 15:00); 
+        Lưu trữ <strong>OneDrive 1TB</strong> và tuân thủ nghiêm ngặt <strong>Ranh giới HROnline</strong> cùng <strong>Quy tắc đóng nhóm Zalo văn phòng trong 7 ngày</strong>.
+      </p>
+      <div class="tags-row">
+        <span class="tag green">🎙️ Giọng đọc Neural Microsoft</span>
+        <span class="tag">Liên kết Teams - Outlook</span>
+        <span class="tag">Phân Role (Owner vs Member)</span>
+        <span class="tag">Profile Card & Sơ đồ tổ chức</span>
+        <span class="tag">Teams Meeting in Outlook</span>
+        <span class="tag red">HROnline (Cốt lõi)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="playlist-card">
+    <h3>MỤC LỤC PHÂN PHẦN BÀI GIẢNG</h3>
+    
+    <div class="chapter-item" onclick="seekVideo(0)">
+      <div class="chap-time">00:00</div>
+      <div class="chap-info">
+        <h4>1. Giới thiệu Tổng quan</h4>
+        <p>Bối cảnh chuyển đổi sang M365 (18s)</p>
+      </div>
+    </div>
+
+    <div class="chapter-item" onclick="seekVideo(18.5)">
+      <div class="chap-time">00:18</div>
+      <div class="chap-info">
+        <h4>2. Teams & Phân Role (Entra ID)</h4>
+        <p>Profile Card, Org Chart & Phân quyền Owner/Member (36s)</p>
+      </div>
+    </div>
+
+    <div class="chapter-item" onclick="seekVideo(54.1)">
+      <div class="chap-time">00:54</div>
+      <div class="chap-info">
+        <h4>3. Outlook: Teams Meeting & Lịch</h4>
+        <p>Tạo link Teams trong Outlook & Scheduling Assistant (24s)</p>
+      </div>
+    </div>
+
+    <div class="chapter-item" onclick="seekVideo(77.7)">
+      <div class="chap-time">01:17</div>
+      <div class="chap-info">
+        <h4>4. OneDrive 1TB An toàn</h4>
+        <p>Đồng bộ dữ liệu máy tính & Phân quyền chia sẻ (23s)</p>
+      </div>
+    </div>
+
+    <div class="chapter-item" onclick="seekVideo(100.4)">
+      <div class="chap-time">01:40</div>
+      <div class="chap-info">
+        <h4>5. Ranh giới & Đóng Zalo</h4>
+        <p>HROnline duy nhất & Lộ trình 7 ngày dứt điểm (25s)</p>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <a class="btn-download" href="Video_Huong_Dan_Chuan_Hoa_Microsoft_365_A25_Hotel.mp4" download>
+        ⬇ Tải Video MP4 Giọng Chuẩn (HD 720p)
+      </a>
+      <a class="btn-doc" href="Bao_cao_Phuong_an_Chuan_hoa_Cong_cu_Microsoft_365_A25_Hotel.docx" download>
+        📄 Mở Báo Cáo Phương Án (Word .docx)
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  CÔNG TY CỔ PHẦN A25 HOTEL — PHÒNG CÔNG NGHỆ THÔNG TIN — BAN PHÁT TRIỂN & QUẢN LÝ PHẦN MỀM<br>
+  Tài liệu học tập nội bộ lưu hành trong Khối Văn phòng A25 Hotel (Tháng 11/2026)
+</footer>
+
+<script>
+  const video = document.getElementById('mainVideo');
+  function seekVideo(seconds) {{
+    video.currentTime = seconds;
+    video.play();
+  }}
+</script>
+</body>
+</html>
+"""
+
+with open(PLAYER_HTML, "w", encoding="utf-8") as fp:
+    fp.write(player_content)
+
+print("SUCCESS: Updated Player HTML at:", PLAYER_HTML)

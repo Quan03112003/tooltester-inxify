@@ -1,0 +1,23 @@
+{
+  "document": "ĐẶC TẢ YÊU CẦU CHỨC NĂNG - NHẬT KÝ NGƯỜI DÙNG (v0.3 - Châu Tuấn)",
+  "endpoint": "GET /api/v1/audit-logs",
+  "expectedRecordSchema": {
+    "id": "UUID string (Required)",
+    "createdAt": "ISO-8601 datetime UTC (FR-02 - Required)",
+    "userId": "UUID string of actor (FR-01 - Required for user actions)",
+    "user": {
+      "username": "string (FR-01)",
+      "fullName": "string (FR-01)",
+      "role": "string (FR-01)"
+    },
+    "propertyId": "UUID string of branch (FR-08)",
+    "ipAddress": "IPv4/IPv6 string (FR-08)",
+    "userAgent": "Browser/Device string (FR-08)",
+    "action": "Action enum string (FR-03 - e.g. CASH_VOUCHER_CREATE, CASH_VOUCHER_UPDATE, CASH_VOUCHER_VOID, PAYMENT, DEBT_PAYMENT, VOID_PAYMENT, ADJUST_PAYMENT_AMOUNT, CHANGE_PAYMENT_METHOD, REFUND, DEPOSIT_ADD, ADJUST_DEPOSIT, CREATE, UPDATE, CANCEL, RBAC_VIOLATION, GUEST_LIST_VIEW, GUEST_SEARCH)",
+    "entityType": "Object type string (FR-04 - CashVoucher, Bill, Payment, Reservation, Booking, CityLedgerInvoice, Company, User, Guest, Authorization)",
+    "entityId": "UUID string of target record (FR-05)",
+    "docNo": "Human-readable voucher/booking/bill/invoice code (FR-05, BR-09)",
+    "oldValues": "Object containing ONLY changed fields with their previous values; null for CREATE events (FR-06, FR-07, FR-BIZ-01, FR-BIZ-02, FR-BIZ-03, BR-03, BR-04)",
+    "newValues": "Object containing ALL changed fields with their new values after save (FR-06, FR-07, FR-10, FR-BIZ-02, AC-02, AC-03); sensitive fields (password, OTP, phone/CCCD in guest search) MUST be masked/excluded (BR-07, AC-07, AC-08, AC-13)"
+  }
+}

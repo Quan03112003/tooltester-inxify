@@ -1,0 +1,317 @@
+[
+  {
+    "id": "a66e3b2d-ef65-4e06-8cf6-0b2c39ed8dd5",
+    "userId": "847606fd-64fe-495f-9cd8-93d96171abc9",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "LOGIN",
+    "entityType": "User",
+    "entityId": "847606fd-64fe-495f-9cd8-93d96171abc9",
+    "oldValues": null,
+    "newValues": {
+      "role": "IT",
+      "username": "minhquan1"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0",
+    "createdAt": "2026-11-19T07:29:21.579Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "minhquan1",
+      "role": "IT"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "c9fafead-aed6-41a4-891a-87ca371181fc",
+    "userId": "847606fd-64fe-495f-9cd8-93d96171abc9",
+    "actorName": null,
+    "propertyId": null,
+    "action": "LOGOUT",
+    "entityType": "User",
+    "entityId": "847606fd-64fe-495f-9cd8-93d96171abc9",
+    "oldValues": null,
+    "newValues": {
+      "sessionRevoked": true
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "createdAt": "2026-11-19T07:00:29.956Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "minhquan1",
+      "role": "IT"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "1993b89d-ba45-47c5-8a11-15114b02662a",
+    "userId": "847606fd-64fe-495f-9cd8-93d96171abc9",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "RBAC_VIOLATION",
+    "entityType": "Authorization",
+    "entityId": null,
+    "oldValues": null,
+    "newValues": {
+      "mode": "ENFORCE",
+      "path": "/api/v1/reservations?dateBasis=checkIn&page=1&limit=20",
+      "role": "IT",
+      "method": "GET",
+      "requiredPermission": "pms:bookings:view_all"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "createdAt": "2026-11-19T07:00:26.661Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "minhquan1",
+      "role": "IT"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "c1c324c6-cb3f-4299-9d96-c6add1a7252e",
+    "userId": null,
+    "actorName": null,
+    "propertyId": null,
+    "action": "LOGIN_FAILED",
+    "entityType": "User",
+    "entityId": null,
+    "oldValues": null,
+    "newValues": {
+      "username": "' or 1=1--"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "createdAt": "2026-11-19T04:31:43.559Z",
+    "user": null,
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "3fabea2d-ae0f-4cb2-88d2-90fdb03bb9c7",
+    "userId": "70be8e97-e290-4c37-bc2c-b5539b437a9b",
+    "actorName": null,
+    "propertyId": null,
+    "action": "FORCE_LOGOUT",
+    "entityType": "User",
+    "entityId": "70be8e97-e290-4c37-bc2c-b5539b437a9b",
+    "oldValues": null,
+    "newValues": {
+      "reason": "session_revoked_password_changed"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "createdAt": "2026-11-19T04:05:56.263Z",
+    "user": {
+      "fullName": "Nguyễn Hữu Phú",
+      "username": "huuphu",
+      "role": "IT"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "aa2429f1-2602-4ed8-b01c-cc1168f3fff6",
+    "userId": "70be8e97-e290-4c37-bc2c-b5539b437a9b",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "USER_CREATE",
+    "entityType": "User",
+    "entityId": "847606fd-64fe-495f-9cd8-93d96171abc9",
+    "oldValues": null,
+    "newValues": {
+      "role": "IT",
+      "fullName": "40.HoangMinhQuan",
+      "username": "minhquan1",
+      "propertyIds": [
+        "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda"
+      ],
+      "scopeRegion": null,
+      "propertyScope": "SPECIFIC"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "createdAt": "2026-11-18T01:44:16.603Z",
+    "user": {
+      "fullName": "Nguyễn Hữu Phú",
+      "username": "huuphu",
+      "role": "IT"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "12209eef-14f2-42c1-b32d-330b9efa3605",
+    "userId": "52a6a4de-fc94-4b43-a72a-2df534027b5f",
+    "actorName": null,
+    "propertyId": null,
+    "action": "UPDATE",
+    "entityType": "User",
+    "entityId": "52a6a4de-fc94-4b43-a72a-2df534027b5f",
+    "oldValues": null,
+    "newValues": {
+      "changedOwnPassword": true
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "createdAt": "2026-11-18T01:26:37.089Z",
+    "user": {
+      "fullName": "41.HoangMinhQuan",
+      "username": "quanhm3",
+      "role": "PROPERTY_MANAGER"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "7c4c8320-c9e4-4bd0-a4d7-3d0b6a975edd",
+    "userId": "70be8e97-e290-4c37-bc2c-b5539b437a9b",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "USER_PASSWORD_RESET",
+    "entityType": "User",
+    "entityId": "52a6a4de-fc94-4b43-a72a-2df534027b5f",
+    "oldValues": null,
+    "newValues": {
+      "username": "quanhm3",
+      "sessionsRevoked": true,
+      "mustChangePassword": true
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "createdAt": "2026-11-18T01:26:10.765Z",
+    "user": {
+      "fullName": "Nguyễn Hữu Phú",
+      "username": "huuphu",
+      "role": "IT"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "70660371-499f-4cd3-8580-43368792e6be",
+    "userId": null,
+    "actorName": null,
+    "propertyId": null,
+    "action": "LOGIN_LOCKED",
+    "entityType": "User",
+    "entityId": null,
+    "oldValues": null,
+    "newValues": {
+      "username": "mq1"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Grafana k6/2.4.0",
+    "createdAt": "2026-11-17T09:57:10.760Z",
+    "user": null,
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "f3ab72af-0c1d-4e94-81c4-4ae376402d54",
+    "userId": "70be8e97-e290-4c37-bc2c-b5539b437a9b",
+    "actorName": null,
+    "propertyId": null,
+    "action": "LOGIN_UNLOCKED",
+    "entityType": "User",
+    "entityId": "1817ac61-6246-4f07-95e7-747cacf53396",
+    "oldValues": null,
+    "newValues": {
+      "username": "mq1",
+      "wasLocked": true,
+      "remainingMinBefore": 14
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "createdAt": "2026-11-17T09:26:44.642Z",
+    "user": {
+      "fullName": "Nguyễn Hữu Phú",
+      "username": "huuphu",
+      "role": "IT"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "fd94f244-d0a5-4900-9dd0-6b779fe8a33f",
+    "userId": "70be8e97-e290-4c37-bc2c-b5539b437a9b",
+    "actorName": null,
+    "propertyId": null,
+    "action": "USER_DELETE",
+    "entityType": "User",
+    "entityId": "a6cdb1d9-7b8e-47f3-b49f-8fe93230ff4b",
+    "oldValues": {
+      "role": "EMPLOYEE",
+      "fullName": "mq171",
+      "username": "mq51"
+    },
+    "newValues": null,
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "createdAt": "2026-11-17T08:33:58.436Z",
+    "user": {
+      "fullName": "Nguyễn Hữu Phú",
+      "username": "huuphu",
+      "role": "IT"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "e9ea8d61-2fc4-4e7d-89ec-3020f5052b96",
+    "userId": "70be8e97-e290-4c37-bc2c-b5539b437a9b",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "USER_BULK_CREATE",
+    "entityType": "User",
+    "entityId": "bulk",
+    "oldValues": null,
+    "newValues": {
+      "role": "EMPLOYEE",
+      "created": 47,
+      "propertyIds": [
+        "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda"
+      ],
+      "skippedExisting": 0
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "createdAt": "2026-11-17T08:03:29.690Z",
+    "user": {
+      "fullName": "Nguyễn Hữu Phú",
+      "username": "huuphu",
+      "role": "IT"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  }
+]

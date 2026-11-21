@@ -1,0 +1,10 @@
+username	password	role
+minhquan1	@Matkhau1	IT
+quanhm	Qu@N_09x!72	EMPLOYEE
+quanhm10	@Matkhau1	ACCOUNTANT
+quanhm6	@Matkhau1	HOUSEKEEPING_STAFF
+quanhm7	@Matkhau1	SECRETARY
+quanhm11	@Matkhau1	WAREHOUSE_STAFF
+quanhm9	@Matkhau1	OTA_MANAGER
+quanhm8	@Matkhau1	INSPECTOR
+quanhm2	@Matkhau1	RECEPTIONIST
