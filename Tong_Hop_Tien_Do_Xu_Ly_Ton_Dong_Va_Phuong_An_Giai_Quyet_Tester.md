@@ -152,5 +152,50 @@ flowchart TD
 | 5 | Thực thi kiểm thử hồi quy (Regression Test) toàn bộ 59 Test Cases trên UAT | Tester Hoàng Minh Quân | **29/11 – 30/11/2026** | Bảng kết quả kiểm thử hoàn chỉnh 100% |
 | 6 | Hoàn thiện Báo cáo kết thúc thử việc chính thức (đầy đủ 4 chỉ số định lượng) | Tester Hoàng Minh Quân & Trưởng ban Sơn | **Trước 16h00 ngày 02/12/2026** | Báo cáo chính thức trình Ban Giám đốc & HR |
 
+---
+
+## V. DANH MỤC HỒ SƠ, TÀI LIỆU VÀ MINH CHỨNG ĐÍNH KÈM (ĐỒNG BỘ ONEDRIVE)
+
+Nhằm bảo đảm tính minh bạch, độc lập đối soát và lưu trữ tập trung trên hệ sinh thái đám mây Microsoft OneDrive của Phòng CNTT Tập đoàn A25, toàn bộ các sản phẩm tài liệu báo cáo, ma trận kiểm thử, sổ theo dõi và tệp hình ảnh dẫn chứng đối soát từ Input đến Result của 09 đầu mục công việc được lập danh mục và đồng bộ theo bảng dưới đây:
+
+| STT | Tên đầu mục & Hồ sơ tài liệu đính kèm | Định dạng | Đường dẫn lưu trữ trên OneDrive / Tệp tin | Mục đích phục vụ nghiệm thu |
+| :---: | :--- | :---: | :--- | :--- |
+| **01** | **Mục 1:** Quyết định phân quyền 09 tài khoản UAT & Cam kết NDA | Markdown / Scan PDF | `OneDrive://A25_QC_Inxify/01_Muc_1_UAT_Inxify_Va_Bao_Ve_Du_Lieu/M1_Danh_sach_09_tai_khoan_UAT_Inxify.md` | Minh chứng nhận tài khoản UAT ngày 19/11 & bảo vệ dữ liệu HBSoft. |
+| **02** | **Mục 2:** Bảng đối chiếu 20 trường Đặt phòng & 18 trường Khách hàng | Excel (.xlsx) | `OneDrive://A25_QC_Inxify/02_Muc_2_Doi_Chieu_Truong_2_Man_Hinh_Inxify/M2_Bang_doi_chieu_20_truong_DatPhong_va_18_truong_KhachHang.xlsx` | Đối chiếu chi tiết 38 trường dữ liệu giữa giao diện web & cấu trúc API. |
+| **03** | **Mục 2:** Cặp ảnh dẫn chứng Form Đặt phòng & Drawer Khách hàng | Hình ảnh (.png) | `OneDrive://A25_QC_Inxify/02_Muc_2_Doi_Chieu_Truong_2_Man_Hinh_Inxify/` (M2_01.png & M2_02.png) | Minh chứng trực quan 20 trường form đặt phòng & 18 trường Drawer CRM. |
+| **04** | **Mục 3 & 4:** Sổ theo dõi vòng đời 04 phiếu thực tế & Báo cáo tuần | Excel (.xlsx) | `OneDrive://A25_QC_Inxify/03_Muc_3_Va_4_Kiem_Soat_Va_Theo_Doi_Phieu_Yeu_Cau/M3_M4_So_theo_doi_04_phieu_thuc_te_va_Bao_cao_tuan.xlsx` | Quản lý vòng đời phiếu YC-001 -> YC-004 và công thức thống kê tự động. |
+| **05** | **Mục 3:** Biên bản trả lại phiếu yêu cầu thiếu thông tin | Biên bản / Excel | `OneDrive://A25_QC_Inxify/03_Muc_3_Va_4_Kiem_Soat_Va_Theo_Doi_Phieu_Yeu_Cau/Bien_ban_tra_lai_phieu_YC-A25-20261118-004.xlsx` | Căn cứ từ chối tiếp nhận yêu cầu sai quy chuẩn của Phòng Kinh doanh. |
+| **06** | **Mục 5:** Kịch bản kiểm thử nghiệm thu Quét QR CCCD & Mock Data | Word (.docx) | `OneDrive://A25_QC_Inxify/04_Muc_5_Kich_Ban_Quet_QR_CCCD/M5_Tai_lieu_Kich_ban_nghiem_thu_Quet_QR_CCCD_Inxify.docx` | Bộ 06 kịch bản nghiệm thu đón đầu + Mock Data 7 trường theo chuẩn BCA. |
+| **07** | **Mục 5:** Ảnh dẫn chứng luồng nhập tay thủ công CCCD ĐÃ PASS | Hình ảnh (.png) | `OneDrive://A25_QC_Inxify/04_Muc_5_Kich_Ban_Quet_QR_CCCD/` (M5_01.png & M5_02.png) | Chứng minh tính năng web hiện có: Nhập tay thủ công đạt chuẩn TC-QR-06. |
+| **08** | **Mục 6:** Báo cáo kiểm thử cảnh báo dữ liệu khi lưu (kèm 07 ảnh) | Word (.docx) | `OneDrive://A25_QC_Inxify/05_Muc_6_Canh_Bao_Kiem_Tra_Luu_Du_Lieu/M6_Bao_cao_kiem_thu_Canh_bao_luu_du_lieu_Co_anh_dan_chung.docx` | Báo cáo thực thi 10 Test cases, phát hiện 03 bất cập dữ liệu kèm 07 ảnh UAT. |
+| **09** | **Mục 6:** Thư mục 07 ảnh dẫn chứng UAT kiểm tra dữ liệu | Thư mục ảnh PNG | `OneDrive://A25_QC_Inxify/05_Muc_6_Canh_Bao_Kiem_Tra_Luu_Du_Lieu/Anh_dan_chung_UAT_Muc_6/` | Dẫn chứng viền đỏ, lỗi SĐT/Email, trùng lặp hồ sơ TEST QUAN trên CRM. |
+| **10** | **Mục 7:** Báo cáo trình BGD kết quả nghiệm thu Audit Log (Ưu tiên 1) | Word (.docx) | `OneDrive://A25_QC_Inxify/06_Muc_7_Nhat_Ky_Thao_Tac_Audit_Log_Uu_Tien_1/M7_Bao_cao_Trinh_Ban_Giam_Doc_Ket_qua_nghiem_thu_Audit_Log.docx` | Báo cáo trọng tâm hoàn thành 20/11: 35 TC (27 Pass, 8 Fail), bắt 08 lỗi kiểm toán. |
+| **11** | **Mục 7:** Ma trận 35 Test Case kiểm thử Audit Log 05 nghiệp vụ | Excel (.xlsx) | `OneDrive://A25_QC_Inxify/06_Muc_7_Nhat_Ky_Thao_Tac_Audit_Log_Uu_Tien_1/M7_Ma_tran_35_TestCase_Audit_Log_Inxify_Hoan_chinh.xlsx` | Ma trận trường dữ liệu, bước thực thi và kết quả chi tiết từng ca test. |
+| **12** | **Mục 7:** Dữ liệu bóc tách DevTools Network API & 13 ảnh UAT | JSON & PNG | `OneDrive://A25_QC_Inxify/06_Muc_7_Nhat_Ky_Thao_Tac_Audit_Log_Uu_Tien_1/Du_lieu_DevTools_Payload_JSON/` | Minh chứng kỹ thuật bóc tách payload JSON chứng minh lỗi thiếu oldValues. |
+| **13** | **Mục 8 & 9:** Văn bản tổng hợp yêu cầu kỹ thuật OTA & Phòng chưa sẵn sàng | Word (.docx) | `OneDrive://A25_QC_Inxify/07_Muc_8_Va_9_Nguon_Kenh_OTA_Va_Phong_Chua_San_Sang/M8_M9_Van_ban_Tong_hop_Yeu_cau_Ky_thuat_Nghiem_thu.docx` | Quy chuẩn 05 tiêu chuẩn kỹ thuật & 08 kịch bản nghiệm thu chờ Dev release. |
+| **14** | **Kiểm tra thực tế:** Báo cáo kết quả kiểm tra thực tế UAT Portal | Word (.docx) | `OneDrive://A25_QC_Inxify/kiem_tra_thuc_te_uat_lan_cuoi/Bao_cao_Kiem_tra_Thuc_te_UAT_Portal_Lan_Cuoi.docx` | Báo cáo tổng hợp đối soát trực tiếp trên web UAT Portal cho toàn bộ 09 mục. |
+| **15** | **Bộ minh chứng:** Thư mục 20 ảnh đối soát Input ➔ Result toàn diện | Thư mục ảnh PNG | `OneDrive://A25_QC_Inxify/kiem_tra_thuc_te_uat_lan_cuoi/Anh_dan_chung_Input_Den_Ket_Qua/` | Đầy đủ 20 tệp ảnh đối soát chi tiết từ dữ liệu nhập đến kết quả phản hồi. |
+| **16** | **Mã nguồn kiểm thử tự động & Kho lưu trữ trực tuyến GitHub** | Python & Git Repo | `https://github.com/Quan03112003/tooltester-inxify` (Đồng bộ OneDrive Code) | Bộ kịch bản Playwright E2E, Network Interception và kho backup online. |
+
+*(*) Ghi chú lưu trữ đám mây:* Toàn bộ thư mục cục bộ `c:\Users\Admin\Desktop\tester\dan_chung_bao_cao\` và `c:\Users\Admin\Desktop\tester\kiem_tra_thuc_te_uat_lan_cuoi\` đã được cấu trúc đồng bộ sẵn sàng để kéo thả trực tiếp lên thư mục chia sẻ OneDrive của Phòng Công nghệ thông tin theo cấu trúc thư mục chuẩn hóa.
+
+---
+
 **CAM KẾT CỦA ỨNG VIÊN & ĐƠN VỊ:**  
 Trưởng ban Nguyễn Văn Sơn và ứng viên Hoàng Minh Quân cam kết chịu trách nhiệm toàn diện về tính trung thực, chính xác của toàn bộ số liệu báo cáo, khắc phục triệt để các tồn đọng và nộp hồ sơ kết thúc thử việc hoàn chỉnh **trước 16h00 ngày 02/12/2026 (tuyệt đối không để sang ngày 03/12/2026)** đúng như chỉ đạo của Sếp.
+
+---
+
+### BẢNG KÝ DUYỆT CÁC CẤP
+
+| Đơn vị / Vị trí ký duyệt | Họ tên & Chữ ký xác nhận |
+| :--- | :--- |
+| **Người lập báo cáo** | **Hoàng Minh Quân** – Chuyên viên kiểm thử phần mềm<br>*(Ký và ghi rõ họ tên)* |
+| **Phòng Công nghệ thông tin** | **Nguyễn Văn Sơn** – Trưởng Ban Phát triển & Quản lý phần mềm<br>*(Ký và ghi rõ họ tên)* |
+| **Phòng Thanh tra giám sát** | *(Ký và ghi rõ họ tên)* |
+| **Giám đốc Kinh doanh** | *(Ký và ghi rõ họ tên)* |
+| **Phó Tổng giám đốc** | *(Ký và ghi rõ họ tên)* |
+| **Ý kiến Sếp (Phê duyệt)** | *(Phê duyệt chủ trương và chỉ đạo tổ chức thực hiện)* |
+
+- **Nơi nhận:** Sếp; Ban Tổng giám đốc; Phòng Thanh tra giám sát; Ban Kiểm soát nội bộ.
+- **Nơi lưu:** Phòng Công nghệ thông tin; Ban Thư ký Tổng hợp.
