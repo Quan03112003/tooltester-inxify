@@ -38,17 +38,21 @@ Thư mục này được tổ chức thành các nhánh thư mục con độc l�
    - `Anh_dan_chung_UAT_Muc_8_va_9/`: Thư mục chứa 08 hình ảnh dẫn chứng UAT (M8_01 -> M8_04, M9_01 -> M9_04).
 
 8. **`08_Bao_Cao_Tong_Hop_PCNTT_Va_Ho_So_Thu_Viec/`**:
-   - `PCNTT_MauBC_Da_dien_chuan.docx`: Báo cáo điền theo đúng mẫu quy chuẩn PCNTT.
+   - `PCNTT_MauBC.docx` / `PCNTT_MauBC_Da_dien_chuan.docx`: Báo cáo chính thức theo đúng mẫu quy chuẩn PCNTT trình Ban Giám đốc và HR (Số: 2111/26/BC-PCNTT) có bảng ký duyệt 4 cấp và danh mục OneDrive.
    - `Bao_cao_PCNTT_Tong_hop_Tien_do_Xu_ly_Ton_dong_va_Phuong_an.docx`: Bản Word báo cáo độc lập hoàn chỉnh.
    - `Tong_Hop_Tien_Do_Xu_Ly_Ton_Dong_Va_Phuong_An_Giai_Quyet_Tester.md`: Bản Markdown tổng hợp toàn diện.
    - `Bao_cao_so_bo_sau_7_ngay_thu_viec_A25_Hoang_Minh_Quan_v5.docx`: Báo cáo sơ bộ 07 ngày.
    - `Chi_dao_09_dau_muc_cong_viec_hronline.md`: Văn bản gốc chỉ đạo 09 đầu mục.
 
-9. **`09_Chuan_Hoa_He_Thong_So_Va_Dao_Tao_M365/`**:
+9. **`kiem_tra_thuc_te_uat_lan_cuoi/`**:
+   - `Bao_cao_Kiem_tra_Thuc_te_UAT_Portal_Lan_Cuoi.docx` / `.md`: Báo cáo kiểm tra thực tế trên web UAT Portal cho toàn bộ 09 đầu mục.
+   - `Anh_dan_chung_Input_Den_Ket_Qua/`: Bộ 20 ảnh chụp màn hình đối soát đầy đủ từ luồng nhập liệu Input đến kết quả hiển thị Result.
+
+10. **`09_Chuan_Hoa_He_Thong_So_Va_Dao_Tao_M365/` (Đầu mục riêng về Hệ sinh thái số & Đào tạo):**
    - `Bao_cao_Phuong_an_Chuan_hoa_Cong_cu_Microsoft_365_A25_Hotel.docx`: Tờ trình & Báo cáo M365 (4.03 MB).
    - `Video_Huong_Dan_Chuan_Hoa_Microsoft_365_A25_Hotel.mp4`: Video thực hành HD 720p (02:05) giọng đọc Neural Microsoft.
    - `Trung_Tam_Video_Huong_Dan_M365_A25_Hotel.html`: Trình duyệt video HTML5 tương tác.
    - `Infographics_M365/` & `Anh_xac_thuc_Microsoft_HD/`: Toàn bộ ảnh đồ họa và hình ảnh giao diện xác thực Microsoft.
 
 ---
-*Ghi chú: Toàn bộ file gốc trong thư mục cha `c:\Users\Admin\Desktop\tester` vẫn được bảo toàn nguyên vẹn 100%.*
+*Ghi chú: Tại thư mục gốc `dan_chung_bao_cao/` cũng đã đặt sẵn tệp báo cáo chính `PCNTT_MauBC.docx` để Ban Giám đốc và Người duyệt có thể mở xem trực tiếp ngay khi truy cập OneDrive mà không cần tìm kiếm sâu trong thư mục con.*
