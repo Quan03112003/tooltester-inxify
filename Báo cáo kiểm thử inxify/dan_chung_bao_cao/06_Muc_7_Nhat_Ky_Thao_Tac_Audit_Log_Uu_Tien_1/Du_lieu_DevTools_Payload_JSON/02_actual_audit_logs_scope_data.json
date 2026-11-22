@@ -1,0 +1,4138 @@
+[
+  {
+    "id": "ae4f99dd-0c22-4294-8204-282ef9862c6a",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "UPDATE",
+    "entityType": "Reservation",
+    "entityId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "oldValues": {
+      "notes": "TEST-QUAN sửa nhiều trường đặt phòng",
+      "checkInTime": "15:00"
+    },
+    "newValues": {
+      "notes": "Mã đặt phòng HBSoft 307699, số phiếu 307699",
+      "checkInTime": "14:00"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:27.175Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "MK684-C8472F03",
+    "docType": "reservation",
+    "docLinkId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "docCtx": {
+      "room": null,
+      "guest": "Hắc Ngọc Kim",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "ed6d677c-460d-48a0-a18c-dda9fab5f27c",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "UPDATE",
+    "entityType": "Reservation",
+    "entityId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "oldValues": {
+      "notes": "TEST-QUAN sửa 1 trường ghi chú đặt phòng",
+      "checkInTime": "14:00"
+    },
+    "newValues": {
+      "notes": "TEST-QUAN sửa nhiều trường đặt phòng",
+      "checkInTime": "15:00"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:26.273Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "MK684-C8472F03",
+    "docType": "reservation",
+    "docLinkId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "docCtx": {
+      "room": null,
+      "guest": "Hắc Ngọc Kim",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "b51144cb-63a3-4151-a430-fcccfb846f3a",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "UPDATE",
+    "entityType": "Reservation",
+    "entityId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "oldValues": {
+      "notes": "Mã đặt phòng HBSoft 307699, số phiếu 307699"
+    },
+    "newValues": {
+      "notes": "TEST-QUAN sửa 1 trường ghi chú đặt phòng"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:24.996Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "MK684-C8472F03",
+    "docType": "reservation",
+    "docLinkId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "docCtx": {
+      "room": null,
+      "guest": "Hắc Ngọc Kim",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "6571547b-7c76-471a-a217-8f7c1e37dbdd",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "ADJUST_DEPOSIT",
+    "entityType": "Reservation",
+    "entityId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "oldValues": {
+      "vouchers": 2,
+      "depositAmount": 3225000,
+      "depositMethod": "BANK_TRANSFER"
+    },
+    "newValues": {
+      "reason": "Khôi phục số tiền cọc gốc sau kiểm thử",
+      "depositAmount": 3175000,
+      "depositMethod": "BANK_TRANSFER"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:24.390Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "MK684-C8472F03",
+    "docType": "reservation",
+    "docLinkId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "docCtx": {
+      "room": null,
+      "guest": "Hắc Ngọc Kim",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "8ab7659a-5f2c-4c7c-89d1-652688174ab6",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "DEPOSIT_ADD",
+    "entityType": "Reservation",
+    "entityId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "oldValues": {
+      "depositAmount": 3175000
+    },
+    "newValues": {
+      "depositRef": "REF-COC-001",
+      "addedDeposit": 50000,
+      "depositAmount": 3225000,
+      "depositMethod": "BANK_TRANSFER"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:23.395Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "MK684-C8472F03",
+    "docType": "reservation",
+    "docLinkId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "docCtx": {
+      "room": null,
+      "guest": "Hắc Ngọc Kim",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "bcd59b49-5e14-4636-a423-4e65806851db",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "VOID_PAYMENT",
+    "entityType": "Payment",
+    "entityId": "84725a0c-9301-4309-a379-ff73d8ceb16f",
+    "oldValues": {
+      "paidAmount": 21665000,
+      "remainingAmount": 3410000
+    },
+    "newValues": {
+      "amount": -10000,
+      "method": "BANK_TRANSFER",
+      "reason": "Khôi phục số dư hóa đơn sau kiểm thử hoàn tiền",
+      "paidAmount": 21675000,
+      "remainingAmount": 3400000
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:21.908Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "3145b6f6-f6c3-49da-86f7-cb58e93f95c5",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "REFUND",
+    "entityType": "Bill",
+    "entityId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "oldValues": {
+      "paidAmount": 21675000,
+      "remainingAmount": 3400000
+    },
+    "newValues": {
+      "amount": 10000,
+      "method": "BANK_TRANSFER",
+      "reason": "TEST-QUAN hoàn tiền kiểm thử Audit Log",
+      "paidAmount": 21665000,
+      "remainingAmount": 3410000
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:20.446Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "45cd8257-2ab5-49d4-a991-048c01462794",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "VOID_PAYMENT",
+    "entityType": "Payment",
+    "entityId": "b7a749c2-07eb-4c6d-b79a-e2b9aea935b7",
+    "oldValues": {
+      "paidAmount": 21685000,
+      "remainingAmount": 3390000
+    },
+    "newValues": {
+      "amount": 10000,
+      "method": "CARD",
+      "reason": "TEST-QUAN Lễ tân void khoản thu kiểm thử",
+      "paidAmount": 21675000,
+      "remainingAmount": 3400000
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:19.126Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "c05def03-febe-41ef-99be-53b2e08c898c",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "CASH_VOUCHER_VOID",
+    "entityType": "CashVoucher",
+    "entityId": "eae1a5c5-434c-40c1-a302-4e21b8d855d9",
+    "oldValues": {
+      "amount": 150000,
+      "method": "Chuyển khoản",
+      "category": "Thu khác",
+      "direction": "IN",
+      "partyName": "TEST-QUAN-KHACH-B",
+      "voucherNo": "PT-2026-1581",
+      "description": "TEST-QUAN đã sửa diễn giải phiếu thu"
+    },
+    "newValues": null,
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:17.730Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PT-2026-1581",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "7e39e674-0a0d-4e79-9007-0afc1b1312fe",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "CASH_VOUCHER_UPDATE",
+    "entityType": "CashVoucher",
+    "entityId": "eae1a5c5-434c-40c1-a302-4e21b8d855d9",
+    "oldValues": {
+      "partyName": "TEST-QUAN-KHACH-B",
+      "reference": "REF-PTC-002",
+      "voucherNo": "PT-2026-1581",
+      "description": "TEST-QUAN đã sửa diễn giải phiếu thu"
+    },
+    "newValues": {
+      "partyName": "TEST-QUAN-KHACH-B",
+      "reference": "REF-PTC-002",
+      "voucherNo": "PT-2026-1581",
+      "description": "TEST-QUAN đã sửa diễn giải phiếu thu"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:16.542Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PT-2026-1581",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "3e0d0956-8c42-4db9-8460-2b9d25c1b845",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "CASH_VOUCHER_UPDATE",
+    "entityType": "CashVoucher",
+    "entityId": "eae1a5c5-434c-40c1-a302-4e21b8d855d9",
+    "oldValues": {
+      "partyName": "TEST-QUAN-KHACH-A-EDITED",
+      "reference": "REF-PTC-001",
+      "voucherNo": "PT-2026-1581",
+      "description": "TEST-QUAN lập phiếu thu kiểm thử Audit Log"
+    },
+    "newValues": {
+      "partyName": "TEST-QUAN-KHACH-B",
+      "reference": "REF-PTC-002",
+      "voucherNo": "PT-2026-1581",
+      "description": "TEST-QUAN đã sửa diễn giải phiếu thu"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:15.279Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PT-2026-1581",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "b8df1415-8435-4678-870f-dec51b407563",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "CASH_VOUCHER_UPDATE",
+    "entityType": "CashVoucher",
+    "entityId": "eae1a5c5-434c-40c1-a302-4e21b8d855d9",
+    "oldValues": {
+      "partyName": "TEST-QUAN-KHACH-A",
+      "reference": "REF-PTC-001",
+      "voucherNo": "PT-2026-1581",
+      "description": "TEST-QUAN lập phiếu thu kiểm thử Audit Log"
+    },
+    "newValues": {
+      "partyName": "TEST-QUAN-KHACH-A-EDITED",
+      "reference": "REF-PTC-001",
+      "voucherNo": "PT-2026-1581",
+      "description": "TEST-QUAN lập phiếu thu kiểm thử Audit Log"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:14.044Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PT-2026-1581",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "f06dcdb4-3d05-4a76-8328-04993b1a4b9d",
+    "userId": "fda342e7-ddc7-46c7-a05d-f9dbfc2a631f",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "CASH_VOUCHER_CREATE",
+    "entityType": "CashVoucher",
+    "entityId": "eae1a5c5-434c-40c1-a302-4e21b8d855d9",
+    "oldValues": null,
+    "newValues": {
+      "amount": 150000,
+      "method": "Chuyển khoản",
+      "category": "Thu khác",
+      "direction": "IN",
+      "partyName": "TEST-QUAN-KHACH-A",
+      "voucherNo": "PT-2026-1581",
+      "description": "TEST-QUAN lập phiếu thu kiểm thử Audit Log"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T08:02:12.719Z",
+    "user": {
+      "fullName": "q1",
+      "username": "quanhm2",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PT-2026-1581",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "eb5d4a18-b5e6-41cf-8601-f4d1f6cf42cf",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "CANCEL",
+    "entityType": "Reservation",
+    "entityId": "fa18f847-90da-519a-9e95-d903cf8f16ad",
+    "oldValues": {
+      "status": "CONFIRMED"
+    },
+    "newValues": {
+      "reason": "TEST-QUAN kiểm thử Audit Log hủy đặt phòng",
+      "status": "CANCELLED",
+      "guestName": "BenThanh Tourist",
+      "depositRefunded": 0,
+      "reservationCode": "MK684-1484EFD0"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:38:58.324Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-1484EFD0",
+    "docType": "reservation",
+    "docLinkId": "fa18f847-90da-519a-9e95-d903cf8f16ad",
+    "docCtx": {
+      "room": null,
+      "guest": "BenThanh Tourist",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "8ae63193-6e0e-40c3-8f4d-e51787f30208",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "ADJUST_PAYMENT_AMOUNT",
+    "entityType": "Payment",
+    "entityId": "9572c9c8-0003-408a-9e6c-ce22d085e05c",
+    "oldValues": {
+      "amount": 12000,
+      "method": "CARD",
+      "cashShiftId": null
+    },
+    "newValues": {
+      "amount": 10000,
+      "reason": "Khôi phục số tiền thu 10,000đ",
+      "shiftWasClosed": false
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:38:57.112Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "2494a9de-1c82-4c40-8536-ae4b68be9ce5",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "DEBT_PAYMENT",
+    "entityType": "Bill",
+    "entityId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "oldValues": {
+      "paidAmount": 21675000,
+      "remainingAmount": 3400000
+    },
+    "newValues": {
+      "amount": 10000,
+      "method": "CARD",
+      "newStatus": "PARTIAL",
+      "paidAmount": 21685000,
+      "remainingAmount": 3390000
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:38:57.103Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "adc667c0-6ab5-43c6-982a-f96f0efbba2f",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "VOID_PAYMENT",
+    "entityType": "Payment",
+    "entityId": "9572c9c8-0003-408a-9e6c-ce22d085e05c",
+    "oldValues": {
+      "paidAmount": 21687000,
+      "remainingAmount": 3388000
+    },
+    "newValues": {
+      "amount": 12000,
+      "method": "CARD",
+      "reason": "Điều chỉnh giảm số tiền đã thu: 12.000đ → 10.000đ · Khôi phục số tiền thu 10,000đ",
+      "paidAmount": 21675000,
+      "remainingAmount": 3400000
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:38:57.058Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "98953d0d-c046-4baa-8b6a-3bc18036253b",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "ADJUST_PAYMENT_AMOUNT",
+    "entityType": "Payment",
+    "entityId": "8c308c12-904e-4552-9e05-ad49244f2188",
+    "oldValues": {
+      "amount": 10000,
+      "method": "CARD",
+      "cashShiftId": null
+    },
+    "newValues": {
+      "amount": 12000,
+      "reason": "TEST-QUAN sửa số tiền khoản thu",
+      "shiftWasClosed": false
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:38:55.823Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "ca4d4b29-80b3-45f4-8a55-c16627483e5a",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "DEBT_PAYMENT",
+    "entityType": "Bill",
+    "entityId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "oldValues": {
+      "paidAmount": 21675000,
+      "remainingAmount": 3400000
+    },
+    "newValues": {
+      "amount": 12000,
+      "method": "CARD",
+      "newStatus": "PARTIAL",
+      "paidAmount": 21687000,
+      "remainingAmount": 3388000
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:38:55.813Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "68e9cb2f-7290-4df3-8232-3372154d1aa5",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "VOID_PAYMENT",
+    "entityType": "Payment",
+    "entityId": "8c308c12-904e-4552-9e05-ad49244f2188",
+    "oldValues": {
+      "paidAmount": 21685000,
+      "remainingAmount": 3390000
+    },
+    "newValues": {
+      "amount": 10000,
+      "method": "CARD",
+      "reason": "Điều chỉnh tăng số tiền đã thu: 10.000đ → 12.000đ · TEST-QUAN sửa số tiền khoản thu",
+      "paidAmount": 21675000,
+      "remainingAmount": 3400000
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:38:55.782Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "a6c792e5-6a57-49d8-bf97-2329e8db3b4e",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "CHANGE_PAYMENT_METHOD",
+    "entityType": "Payment",
+    "entityId": "54b1a5ee-4dc0-454a-a5a5-00a5c2701964",
+    "oldValues": {
+      "amount": 10000,
+      "method": "BANK_TRANSFER",
+      "reference": "",
+      "cashShiftId": null
+    },
+    "newValues": {
+      "amount": 10000,
+      "method": "CARD",
+      "reason": "TEST-QUAN khách đổi PTTT sang thẻ",
+      "shiftWasClosed": false
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:38:12.741Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "35bd9951-61aa-468f-ae23-2e95f54d2849",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "DEBT_PAYMENT",
+    "entityType": "Bill",
+    "entityId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "oldValues": {
+      "paidAmount": 21675000,
+      "remainingAmount": 3400000
+    },
+    "newValues": {
+      "amount": 10000,
+      "method": "CARD",
+      "newStatus": "PARTIAL",
+      "paidAmount": 21685000,
+      "remainingAmount": 3390000
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:38:12.726Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "6b16a273-678a-4292-bc6b-dda50e3677d6",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "VOID_PAYMENT",
+    "entityType": "Payment",
+    "entityId": "54b1a5ee-4dc0-454a-a5a5-00a5c2701964",
+    "oldValues": {
+      "paidAmount": 21685000,
+      "remainingAmount": 3390000
+    },
+    "newValues": {
+      "amount": 10000,
+      "method": "BANK_TRANSFER",
+      "reason": "Đổi hình thức thanh toán: Chuyển khoản → Thẻ · TEST-QUAN khách đổi PTTT sang thẻ",
+      "paidAmount": 21675000,
+      "remainingAmount": 3400000
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:38:12.684Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "08f63c76-6bbb-4e55-9af0-d7b697bde54e",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "DEBT_PAYMENT",
+    "entityType": "Bill",
+    "entityId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "oldValues": {
+      "paidAmount": 21675000,
+      "remainingAmount": 3400000
+    },
+    "newValues": {
+      "amount": 10000,
+      "method": "BANK_TRANSFER",
+      "newStatus": "PARTIAL",
+      "paidAmount": 21685000,
+      "remainingAmount": 3390000
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:37:35.639Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-284749",
+    "docType": "bill",
+    "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+    "docCtx": {
+      "room": "1001",
+      "guest": "Call 2 - NC40A13NOV040 - AR",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "22658327-f938-4801-89c7-1b41baff7187",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "ADJUST_DEPOSIT",
+    "entityType": "Reservation",
+    "entityId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "oldValues": {
+      "vouchers": 1,
+      "depositAmount": 3175001,
+      "depositMethod": "BANK_TRANSFER"
+    },
+    "newValues": {
+      "reason": "Khôi phục dữ liệu gốc sau kiểm thử",
+      "depositAmount": 3175000,
+      "depositMethod": "BANK_TRANSFER"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:34:41.203Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-C8472F03",
+    "docType": "reservation",
+    "docLinkId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "docCtx": {
+      "room": null,
+      "guest": "Hắc Ngọc Kim",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "8c75f205-7da4-4b0a-8a68-234d8697fe15",
+    "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+    "actorName": null,
+    "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+    "action": "ADJUST_DEPOSIT",
+    "entityType": "Reservation",
+    "entityId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "oldValues": {
+      "vouchers": 0,
+      "depositAmount": 3175000,
+      "depositMethod": "BANK_TRANSFER"
+    },
+    "newValues": {
+      "reason": "TEST-QUAN kiểm thử Audit Log sửa tiền cọc",
+      "depositAmount": 3175001,
+      "depositMethod": "BANK_TRANSFER"
+    },
+    "ipAddress": "14.232.208.148",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+    "createdAt": "2026-11-19T07:34:39.917Z",
+    "user": {
+      "fullName": "40.HoangMinhQuan",
+      "username": "quanhm10",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": "MK684-C8472F03",
+    "docType": "reservation",
+    "docLinkId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+    "docCtx": {
+      "room": null,
+      "guest": "Hắc Ngọc Kim",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "c48833fa-d7ef-41ed-8574-b1041de9b7e4",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "EINVOICE_ISSUE",
+    "entityType": "EInvoice",
+    "entityId": "bd327b66-452a-4413-9a39-13c5f9d7644e",
+    "oldValues": null,
+    "newValues": {
+      "billId": "e6c1ebb1-cdec-4f8d-a8b3-b5f9834e94fd",
+      "invoiceNo": "C26TN0000002",
+      "billNumber": "BL-B98A-000003"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:45.770Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000003",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "d5f0984e-03b0-4f4c-a289-3d79d72f2a92",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "EINVOICE_ISSUE",
+    "entityType": "EInvoice",
+    "entityId": "8549d539-6bdc-4dd7-a482-707844837982",
+    "oldValues": null,
+    "newValues": {
+      "billId": "1259322e-fdf4-4bfa-bc35-6a1cbe7ad2b0",
+      "invoiceNo": "C26TN0000001",
+      "billNumber": "BL-B98A-000001"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:45.724Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000001",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "3295800c-255d-41bd-bc3a-94da749d76fa",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "d059cb8b-9798-4d83-ac5e-7ad3f36cd85f",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Đoàn Công ty svkizx #2",
+      "reservationCode": "RSV-000013-02"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:44.857Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000013-02",
+    "docType": "reservation",
+    "docLinkId": "d059cb8b-9798-4d83-ac5e-7ad3f36cd85f",
+    "docCtx": {
+      "room": null,
+      "guest": "Đoàn Công ty svkizx #2",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "4caf4eff-71e4-4348-b3ad-2828d06f3073",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "fff0ec8f-4c4b-4be0-b60a-ad73a144b3bc",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Đoàn Công ty svkizx #1",
+      "reservationCode": "RSV-000013-01"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:44.791Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000013-01",
+    "docType": "reservation",
+    "docLinkId": "fff0ec8f-4c4b-4be0-b60a-ad73a144b3bc",
+    "docCtx": {
+      "room": null,
+      "guest": "Đoàn Công ty svkizx #1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "24264359-c421-44ba-a275-b10db884418e",
+    "userId": "a94ef261-44eb-47ed-af79-6dd82ffc34e2",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CREATE",
+    "entityType": "PriceFloor",
+    "entityId": "843a2cb3-0d91-48cd-bd2d-ba6960f7f099",
+    "oldValues": null,
+    "newValues": {
+      "role": "(mặc định)",
+      "amount": 400000,
+      "roomType": "Cao cấp"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:44.287Z",
+    "user": {
+      "fullName": "Kiểm thử - Quản trị chuỗi",
+      "username": "pt.admin",
+      "role": "ADMIN"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "06996d83-d489-4b27-b23c-4f47f164ea5d",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CHECK_OUT",
+    "entityType": "Booking",
+    "entityId": "990e15d1-2a85-4dc6-891a-54bcb3a4810b",
+    "oldValues": {
+      "status": "CHECKED_IN"
+    },
+    "newValues": {
+      "status": "CHECKED_OUT",
+      "billStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "totalAmount": 630000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:43.112Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000005",
+    "docType": "booking",
+    "docLinkId": "f5be514a-1bf6-4f5f-9f4b-69a66052c034",
+    "docCtx": {
+      "room": "302",
+      "guest": "Khách ở UAT-02-5",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "eea3fe39-6ecd-489b-b29c-08c596c126d8",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CHECK_OUT",
+    "entityType": "Booking",
+    "entityId": "bd6642a4-4d2e-45d6-9031-edeace6dd533",
+    "oldValues": {
+      "status": "CHECKED_IN"
+    },
+    "newValues": {
+      "status": "CHECKED_OUT",
+      "billStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "totalAmount": 830000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:42.944Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000003",
+    "docType": "booking",
+    "docLinkId": "e6c1ebb1-cdec-4f8d-a8b3-b5f9834e94fd",
+    "docCtx": {
+      "room": "202",
+      "guest": "Khách ở UAT-02-3",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "683e24aa-812c-43e1-b652-18f62100e238",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CHECK_OUT",
+    "entityType": "Booking",
+    "entityId": "6269b577-45fe-4332-9c34-adadce665bf2",
+    "oldValues": {
+      "status": "CHECKED_IN"
+    },
+    "newValues": {
+      "status": "CHECKED_OUT",
+      "billStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "totalAmount": 605000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:42.731Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000001",
+    "docType": "booking",
+    "docLinkId": "1259322e-fdf4-4bfa-bc35-6a1cbe7ad2b0",
+    "docCtx": {
+      "room": "104",
+      "guest": "Khách ở UAT-02-1",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "1477d395-fed4-4650-86e3-0dfc2b0ed2d1",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "f5be514a-1bf6-4f5f-9f4b-69a66052c034",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 430000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "CASH",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 130000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:42.525Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000005",
+    "docType": "bill",
+    "docLinkId": "f5be514a-1bf6-4f5f-9f4b-69a66052c034",
+    "docCtx": {
+      "room": "302",
+      "guest": "Khách ở UAT-02-5",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "9caa4609-1b7c-401f-8738-564c7bc3e0b1",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "f5be514a-1bf6-4f5f-9f4b-69a66052c034",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:42.436Z",
+    "user": null,
+    "docNo": "BL-B98A-000005",
+    "docType": "bill",
+    "docLinkId": "f5be514a-1bf6-4f5f-9f4b-69a66052c034",
+    "docCtx": {
+      "room": "302",
+      "guest": "Khách ở UAT-02-5",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "b3f56d7c-26ca-4766-8c71-33769631bbcc",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "f5be514a-1bf6-4f5f-9f4b-69a66052c034",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:42.343Z",
+    "user": null,
+    "docNo": "BL-B98A-000005",
+    "docType": "bill",
+    "docLinkId": "f5be514a-1bf6-4f5f-9f4b-69a66052c034",
+    "docCtx": {
+      "room": "302",
+      "guest": "Khách ở UAT-02-5",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "b4b37493-7fe5-496d-91b5-2ee51e3e101b",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "990e15d1-2a85-4dc6-891a-54bcb3a4810b",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-02-5",
+      "roomNumber": "302",
+      "discountPct": 0,
+      "totalAmount": 500000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:42.203Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000005",
+    "docType": "booking",
+    "docLinkId": "f5be514a-1bf6-4f5f-9f4b-69a66052c034",
+    "docCtx": {
+      "room": "302",
+      "guest": "Khách ở UAT-02-5",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "354a0c8a-ce97-48ff-8ae3-dde1ea55e134",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "726d03d3-559a-4fb1-96d5-fc2c04f60d0b",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 690000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "BANK_TRANSFER",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 390000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:42.026Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000004",
+    "docType": "bill",
+    "docLinkId": "726d03d3-559a-4fb1-96d5-fc2c04f60d0b",
+    "docCtx": {
+      "room": "301",
+      "guest": "Khách ở UAT-02-4",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "325cf2dc-0430-4e67-aee8-1b9ca960ab28",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "726d03d3-559a-4fb1-96d5-fc2c04f60d0b",
+    "oldValues": null,
+    "newValues": {
+      "type": "PERCENT",
+      "description": "Giảm giá: Khách quen (thử)",
+      "discountAmount": 40000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:41.924Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000004",
+    "docType": "bill",
+    "docLinkId": "726d03d3-559a-4fb1-96d5-fc2c04f60d0b",
+    "docCtx": {
+      "room": "301",
+      "guest": "Khách ở UAT-02-4",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "d2e606d4-4eed-4126-b148-0e008f92f172",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "726d03d3-559a-4fb1-96d5-fc2c04f60d0b",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:41.830Z",
+    "user": null,
+    "docNo": "BL-B98A-000004",
+    "docType": "bill",
+    "docLinkId": "726d03d3-559a-4fb1-96d5-fc2c04f60d0b",
+    "docCtx": {
+      "room": "301",
+      "guest": "Khách ở UAT-02-4",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "1e0178c4-0e42-4030-8ca9-bb7637276440",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "726d03d3-559a-4fb1-96d5-fc2c04f60d0b",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:41.736Z",
+    "user": null,
+    "docNo": "BL-B98A-000004",
+    "docType": "bill",
+    "docLinkId": "726d03d3-559a-4fb1-96d5-fc2c04f60d0b",
+    "docCtx": {
+      "room": "301",
+      "guest": "Khách ở UAT-02-4",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "57f5c395-237d-486c-b702-6092410496f4",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "6ae32e85-65f7-4515-a4b8-a2fd08c51af6",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-02-4",
+      "roomNumber": "301",
+      "discountPct": 0,
+      "totalAmount": 800000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:41.603Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000004",
+    "docType": "booking",
+    "docLinkId": "726d03d3-559a-4fb1-96d5-fc2c04f60d0b",
+    "docCtx": {
+      "room": "301",
+      "guest": "Khách ở UAT-02-4",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "057c0791-818e-4665-bad6-e8a5c3bfe427",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "e6c1ebb1-cdec-4f8d-a8b3-b5f9834e94fd",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 630000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "CASH",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 330000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:41.431Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000003",
+    "docType": "bill",
+    "docLinkId": "e6c1ebb1-cdec-4f8d-a8b3-b5f9834e94fd",
+    "docCtx": {
+      "room": "202",
+      "guest": "Khách ở UAT-02-3",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "05a9e1a1-29fc-43de-864f-214cc44f6243",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "e6c1ebb1-cdec-4f8d-a8b3-b5f9834e94fd",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:41.337Z",
+    "user": null,
+    "docNo": "BL-B98A-000003",
+    "docType": "bill",
+    "docLinkId": "e6c1ebb1-cdec-4f8d-a8b3-b5f9834e94fd",
+    "docCtx": {
+      "room": "202",
+      "guest": "Khách ở UAT-02-3",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "455cd0c8-8dd6-4cc9-bd62-434d9ed38ea3",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "e6c1ebb1-cdec-4f8d-a8b3-b5f9834e94fd",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:41.240Z",
+    "user": null,
+    "docNo": "BL-B98A-000003",
+    "docType": "bill",
+    "docLinkId": "e6c1ebb1-cdec-4f8d-a8b3-b5f9834e94fd",
+    "docCtx": {
+      "room": "202",
+      "guest": "Khách ở UAT-02-3",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "03774713-c0f9-4306-a2e7-fa372fa2e32f",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "bd6642a4-4d2e-45d6-9031-edeace6dd533",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-02-3",
+      "roomNumber": "202",
+      "discountPct": 0,
+      "totalAmount": 700000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:41.097Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000003",
+    "docType": "booking",
+    "docLinkId": "e6c1ebb1-cdec-4f8d-a8b3-b5f9834e94fd",
+    "docCtx": {
+      "room": "202",
+      "guest": "Khách ở UAT-02-3",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "28861d7c-e10e-4a48-8d8c-40dc7dd17529",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "f43b6eca-b96a-4a3c-9edf-c9f027f9c5cb",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 530000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "BANK_TRANSFER",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 230000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:40.942Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000002",
+    "docType": "bill",
+    "docLinkId": "f43b6eca-b96a-4a3c-9edf-c9f027f9c5cb",
+    "docCtx": {
+      "room": "201",
+      "guest": "Khách ở UAT-02-2",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "5e6bc9b1-d4e8-4b19-9095-dc2da4f2a44b",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "f43b6eca-b96a-4a3c-9edf-c9f027f9c5cb",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:40.858Z",
+    "user": null,
+    "docNo": "BL-B98A-000002",
+    "docType": "bill",
+    "docLinkId": "f43b6eca-b96a-4a3c-9edf-c9f027f9c5cb",
+    "docCtx": {
+      "room": "201",
+      "guest": "Khách ở UAT-02-2",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "3b9b9fc0-ac3e-4650-a027-ead290aae3c1",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "f43b6eca-b96a-4a3c-9edf-c9f027f9c5cb",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:40.780Z",
+    "user": null,
+    "docNo": "BL-B98A-000002",
+    "docType": "bill",
+    "docLinkId": "f43b6eca-b96a-4a3c-9edf-c9f027f9c5cb",
+    "docCtx": {
+      "room": "201",
+      "guest": "Khách ở UAT-02-2",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "631cae01-1e92-43bf-a060-dd877febcd0b",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "3d9b8f24-d32a-4be5-91f5-d5554b079747",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-02-2",
+      "roomNumber": "201",
+      "discountPct": 0,
+      "totalAmount": 600000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:40.661Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000002",
+    "docType": "booking",
+    "docLinkId": "f43b6eca-b96a-4a3c-9edf-c9f027f9c5cb",
+    "docCtx": {
+      "room": "201",
+      "guest": "Khách ở UAT-02-2",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "f1bf85f9-e413-48d5-84ff-09591996554d",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "1259322e-fdf4-4bfa-bc35-6a1cbe7ad2b0",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 405000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "CASH",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 105000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:40.507Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000001",
+    "docType": "bill",
+    "docLinkId": "1259322e-fdf4-4bfa-bc35-6a1cbe7ad2b0",
+    "docCtx": {
+      "room": "104",
+      "guest": "Khách ở UAT-02-1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "ccc08bb7-3dfe-4e1e-b9a4-dfbb0d2cbaea",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "1259322e-fdf4-4bfa-bc35-6a1cbe7ad2b0",
+    "oldValues": null,
+    "newValues": {
+      "type": "PERCENT",
+      "description": "Giảm giá: Khách quen (thử)",
+      "discountAmount": 25000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:40.402Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000001",
+    "docType": "bill",
+    "docLinkId": "1259322e-fdf4-4bfa-bc35-6a1cbe7ad2b0",
+    "docCtx": {
+      "room": "104",
+      "guest": "Khách ở UAT-02-1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "65f12877-15fa-4586-bb8f-1aab7cf42f28",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "1259322e-fdf4-4bfa-bc35-6a1cbe7ad2b0",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:40.301Z",
+    "user": null,
+    "docNo": "BL-B98A-000001",
+    "docType": "bill",
+    "docLinkId": "1259322e-fdf4-4bfa-bc35-6a1cbe7ad2b0",
+    "docCtx": {
+      "room": "104",
+      "guest": "Khách ở UAT-02-1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "c66757e0-86f7-40c9-ae0c-a21ced07c4d5",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "1259322e-fdf4-4bfa-bc35-6a1cbe7ad2b0",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:40.212Z",
+    "user": null,
+    "docNo": "BL-B98A-000001",
+    "docType": "bill",
+    "docLinkId": "1259322e-fdf4-4bfa-bc35-6a1cbe7ad2b0",
+    "docCtx": {
+      "room": "104",
+      "guest": "Khách ở UAT-02-1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "cccb9305-a98f-4c7f-bb8c-7b36088b7e02",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "6269b577-45fe-4332-9c34-adadce665bf2",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-02-1",
+      "roomNumber": "104",
+      "discountPct": 0,
+      "totalAmount": 500000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:40.074Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-B98A-000001",
+    "docType": "booking",
+    "docLinkId": "1259322e-fdf4-4bfa-bc35-6a1cbe7ad2b0",
+    "docCtx": {
+      "room": "104",
+      "guest": "Khách ở UAT-02-1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "32f9bc67-b7db-4a1c-9898-574380d14d31",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "3b0f5f5b-8b56-410d-8e63-ae0fe8b6fdba",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách đặt UAT-02-6",
+      "reservationCode": "RSV-000012"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:39.946Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000012",
+    "docType": "reservation",
+    "docLinkId": "3b0f5f5b-8b56-410d-8e63-ae0fe8b6fdba",
+    "docCtx": {
+      "room": null,
+      "guest": "Khách đặt UAT-02-6",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "2d14670a-2c82-4e9b-8b13-50c3bd451797",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "7de7ed6e-7c71-49b8-8e6c-2d4b6d33b395",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách đặt UAT-02-5",
+      "reservationCode": "RSV-000011"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:39.838Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000011",
+    "docType": "reservation",
+    "docLinkId": "7de7ed6e-7c71-49b8-8e6c-2d4b6d33b395",
+    "docCtx": {
+      "room": null,
+      "guest": "Khách đặt UAT-02-5",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "c3cae163-124e-4aa5-8701-169c07bc6b94",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "6fb58c41-6232-45cd-ab0f-6a825726f868",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách đặt UAT-02-4",
+      "reservationCode": "RSV-000010"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:39.698Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000010",
+    "docType": "reservation",
+    "docLinkId": "6fb58c41-6232-45cd-ab0f-6a825726f868",
+    "docCtx": {
+      "room": null,
+      "guest": "Khách đặt UAT-02-4",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "c43ed635-4386-414d-b448-d464a6d3c79d",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "f5ec691c-5367-4141-a958-2c2833279e86",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách đặt UAT-02-3",
+      "reservationCode": "RSV-000009"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:39.575Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000009",
+    "docType": "reservation",
+    "docLinkId": "f5ec691c-5367-4141-a958-2c2833279e86",
+    "docCtx": {
+      "room": null,
+      "guest": "Khách đặt UAT-02-3",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "aa66d1ae-f65a-4aee-b2f4-0f761987dc9b",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "6b7d7510-6b04-44ed-94c2-691babf0939b",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách đặt UAT-02-2",
+      "reservationCode": "RSV-000008"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:39.425Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000008",
+    "docType": "reservation",
+    "docLinkId": "6b7d7510-6b04-44ed-94c2-691babf0939b",
+    "docCtx": {
+      "room": null,
+      "guest": "Khách đặt UAT-02-2",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "07a2b4f7-d65f-4284-8744-e8125df8d889",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CASH_VOUCHER_CREATE",
+    "entityType": "CashVoucher",
+    "entityId": "7dd0886f-3495-4735-ba22-de8de4c9b41c",
+    "oldValues": null,
+    "newValues": {
+      "amount": 2500000,
+      "method": "Tiền mặt (VND)",
+      "category": "Đổi ngoại tệ",
+      "direction": "OUT",
+      "voucherNo": "PC-2026-0002",
+      "description": "Đổi ngoại tệ — vế tiền mặt VNĐ (cặp PT-2026-0002)"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:39.262Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PC-2026-0002",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "ab5abf57-4095-42da-a026-c12995f23e39",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CASH_VOUCHER_CREATE",
+    "entityType": "CashVoucher",
+    "entityId": "ffe82768-b7b2-4569-8028-7e5803910e6c",
+    "oldValues": null,
+    "newValues": {
+      "amount": 2500000,
+      "method": "Ngoại tệ",
+      "category": "Đổi ngoại tệ",
+      "amountUsd": "100 USD",
+      "direction": "IN",
+      "voucherNo": "PT-2026-0002"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:39.256Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PT-2026-0002",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "52d3d5fa-f8ac-4a37-9436-6e1e85531921",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CASH_VOUCHER_CREATE",
+    "entityType": "CashVoucher",
+    "entityId": "b6972d1a-e234-44ef-ae99-d9f0647d1472",
+    "oldValues": null,
+    "newValues": {
+      "amount": 150000,
+      "method": "Tiền mặt (VND)",
+      "category": "Chi khác",
+      "direction": "OUT",
+      "partyName": "Chi văn phòng phẩm",
+      "voucherNo": "PC-2026-0001",
+      "description": "Mua VPP"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:39.190Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PC-2026-0001",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "b7182c7f-a38c-496b-a99f-246d0f7ace7f",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CASH_VOUCHER_CREATE",
+    "entityType": "CashVoucher",
+    "entityId": "4a21d8d6-fe0e-45fa-afff-68cf7aeb2614",
+    "oldValues": null,
+    "newValues": {
+      "amount": 500000,
+      "method": "Tiền mặt (VND)",
+      "category": "Thu khác",
+      "direction": "IN",
+      "partyName": "Khách lẻ l209cv",
+      "voucherNo": "PT-2026-0001",
+      "description": "Thu khác tại quầy"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:39.117Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PT-2026-0001",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "a23c7cd6-0813-47b0-aa77-181b1100de03",
+    "userId": "1d7622dd-87c3-477d-8d8a-cc370aa91251",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CASH_SHIFT_OPEN",
+    "entityType": "CashShift",
+    "entityId": "35d62813-0c08-44d8-ac3f-f9182509ebda",
+    "oldValues": null,
+    "newValues": {
+      "shiftNumber": null,
+      "allowParallel": false,
+      "openingBalance": 1000000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:39.034Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở B",
+      "username": "pt.le.tan.b",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "23d6cc07-12a4-435f-9b92-b6806af6e192",
+    "userId": "a94ef261-44eb-47ed-af79-6dd82ffc34e2",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CURRENCY_RATE_UPDATE",
+    "entityType": "CurrencyRate",
+    "entityId": "acca75c9-fe08-4a7b-8576-c1ff85bb64c1",
+    "oldValues": {
+      "note": null,
+      "rate": 25000,
+      "buyRate": null,
+      "sellRate": null
+    },
+    "newValues": {
+      "note": null,
+      "rate": 25000,
+      "scope": "TOÀN HỆ THỐNG",
+      "buyRate": null,
+      "currency": "USD",
+      "sellRate": null,
+      "effectiveDate": "2026-09-17"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:38.971Z",
+    "user": {
+      "fullName": "Kiểm thử - Quản trị chuỗi",
+      "username": "pt.admin",
+      "role": "ADMIN"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "29113131-dbe7-4d93-8879-c5d94a0afca8",
+    "userId": "a94ef261-44eb-47ed-af79-6dd82ffc34e2",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CREATE",
+    "entityType": "SEASON_RATE",
+    "entityId": "7a502c41-49cd-4601-9282-2eb097cd8f5a",
+    "oldValues": null,
+    "newValues": {
+      "name": "Cao điểm hè (thử)",
+      "endDate": "2026-11-06",
+      "endTime": null,
+      "startDate": "2026-10-07",
+      "startTime": null,
+      "ratePlanId": null,
+      "roomTypeId": "f20c467f-8eac-459d-b65e-beac7df12432",
+      "priceHourly": null,
+      "priceWeekday": 900000,
+      "priceWeekend": 1100000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:38.900Z",
+    "user": {
+      "fullName": "Kiểm thử - Quản trị chuỗi",
+      "username": "pt.admin",
+      "role": "ADMIN"
+    },
+    "docNo": "Cao điểm hè (thử)",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "139cc1e8-6c98-487f-9ad0-9af91089cb10",
+    "userId": "a94ef261-44eb-47ed-af79-6dd82ffc34e2",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CREATE",
+    "entityType": "StockVoucher",
+    "entityId": "24008e16-db00-450c-b602-da4a107ae052",
+    "oldValues": null,
+    "newValues": {
+      "code": "PXK-000001",
+      "lines": 1,
+      "reason": "Xuất dùng buồng phòng",
+      "status": "CONFIRMED",
+      "supplier": null,
+      "totalAmount": 60000,
+      "voucherKind": null,
+      "voucherType": "ISSUE",
+      "paymentMethod": null
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:38.487Z",
+    "user": {
+      "fullName": "Kiểm thử - Quản trị chuỗi",
+      "username": "pt.admin",
+      "role": "ADMIN"
+    },
+    "docNo": "PXK-000001",
+    "docType": "stockVoucher",
+    "docLinkId": "24008e16-db00-450c-b602-da4a107ae052",
+    "docCtx": null
+  },
+  {
+    "id": "bcdcb6bc-be93-4d52-8b00-66b84f2a6acd",
+    "userId": "a94ef261-44eb-47ed-af79-6dd82ffc34e2",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "STOCK_VOUCHER_CONFIRM",
+    "entityType": "StockVoucher",
+    "entityId": "90e4f767-6907-4023-87b2-8ce8056874aa",
+    "oldValues": {
+      "code": "PNK-000001",
+      "status": "DRAFT"
+    },
+    "newValues": {
+      "code": "PNK-000001",
+      "lines": 5,
+      "status": "CONFIRMED",
+      "supplier": null,
+      "totalAmount": 7500000,
+      "voucherKind": "NEW",
+      "voucherType": "RECEIPT"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:38.379Z",
+    "user": {
+      "fullName": "Kiểm thử - Quản trị chuỗi",
+      "username": "pt.admin",
+      "role": "ADMIN"
+    },
+    "docNo": "PNK-000001",
+    "docType": "stockVoucher",
+    "docLinkId": "90e4f767-6907-4023-87b2-8ce8056874aa",
+    "docCtx": null
+  },
+  {
+    "id": "93940835-5ec3-4862-93d1-0270efdbaa0c",
+    "userId": "a94ef261-44eb-47ed-af79-6dd82ffc34e2",
+    "actorName": null,
+    "propertyId": "b98a0764-fc73-4e5a-87fd-a1f7db0795d4",
+    "action": "CREATE",
+    "entityType": "StockVoucher",
+    "entityId": "90e4f767-6907-4023-87b2-8ce8056874aa",
+    "oldValues": null,
+    "newValues": {
+      "code": "PNK-000001",
+      "lines": 5,
+      "reason": null,
+      "status": "DRAFT",
+      "supplier": null,
+      "totalAmount": 7500000,
+      "voucherKind": null,
+      "voucherType": "RECEIPT",
+      "paymentMethod": null
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:38.197Z",
+    "user": {
+      "fullName": "Kiểm thử - Quản trị chuỗi",
+      "username": "pt.admin",
+      "role": "ADMIN"
+    },
+    "docNo": "PNK-000001",
+    "docType": "stockVoucher",
+    "docLinkId": "90e4f767-6907-4023-87b2-8ce8056874aa",
+    "docCtx": null
+  },
+  {
+    "id": "2966b599-b69a-4f6f-a191-775c2d0f9213",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "EINVOICE_ISSUE",
+    "entityType": "EInvoice",
+    "entityId": "3e5b1119-25e2-4e26-b847-75cc37e2e34f",
+    "oldValues": null,
+    "newValues": {
+      "billId": "34944a22-63b9-4f4a-98a7-904a1b8e2fbb",
+      "invoiceNo": "C26TN0000002",
+      "billNumber": "BL-4CDB-000003"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:36.735Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000003",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "a564d2ae-f961-491a-980d-da579c4600c9",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "EINVOICE_ISSUE",
+    "entityType": "EInvoice",
+    "entityId": "f0721a64-7f1f-45dc-ab9e-408ddeded62b",
+    "oldValues": null,
+    "newValues": {
+      "billId": "050f4bce-a64d-4340-81bc-e46448b7a095",
+      "invoiceNo": "C26TN0000001",
+      "billNumber": "BL-4CDB-000001"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:36.670Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000001",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "f9f64b84-2c94-4023-b6d1-3cc9b4fb753d",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "65d72fbc-20b5-4341-ac26-40109da3cbc1",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Đoàn Công ty z4ayz4 #2",
+      "reservationCode": "RSV-000007-02"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:36.130Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000007-02",
+    "docType": "reservation",
+    "docLinkId": "65d72fbc-20b5-4341-ac26-40109da3cbc1",
+    "docCtx": {
+      "room": null,
+      "guest": "Đoàn Công ty z4ayz4 #2",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "aedf0584-8ee2-4e3d-9659-365894aa2203",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "16a6d383-47f5-40f8-a4c5-e8c26d714895",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Đoàn Công ty z4ayz4 #1",
+      "reservationCode": "RSV-000007-01"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:36.089Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000007-01",
+    "docType": "reservation",
+    "docLinkId": "16a6d383-47f5-40f8-a4c5-e8c26d714895",
+    "docCtx": {
+      "room": null,
+      "guest": "Đoàn Công ty z4ayz4 #1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "dc689f1f-bbc8-4d38-8067-1eeb97241b00",
+    "userId": "a94ef261-44eb-47ed-af79-6dd82ffc34e2",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CREATE",
+    "entityType": "PriceFloor",
+    "entityId": "dc68119f-e765-4de3-8e50-9c5a2ff9192b",
+    "oldValues": null,
+    "newValues": {
+      "role": "(mặc định)",
+      "amount": 400000,
+      "roomType": "Cao cấp"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:35.562Z",
+    "user": {
+      "fullName": "Kiểm thử - Quản trị chuỗi",
+      "username": "pt.admin",
+      "role": "ADMIN"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "457de151-3175-4996-a8a1-e1f0dde14816",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CHECK_OUT",
+    "entityType": "Booking",
+    "entityId": "63a147b7-4647-45d3-9cf1-42976d7a2e30",
+    "oldValues": {
+      "status": "CHECKED_IN"
+    },
+    "newValues": {
+      "status": "CHECKED_OUT",
+      "billStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "totalAmount": 795000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:34.497Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000007",
+    "docType": "booking",
+    "docLinkId": "890ad9ad-b7a1-4907-89b0-3295bb38819b",
+    "docCtx": {
+      "room": "204",
+      "guest": "Khách ở UAT-01-7",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "7bdfdcd7-c5c8-497f-a164-2e347141f083",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CHECK_OUT",
+    "entityType": "Booking",
+    "entityId": "722292fd-0526-42d9-aa23-b4714065198c",
+    "oldValues": {
+      "status": "CHECKED_IN"
+    },
+    "newValues": {
+      "status": "CHECKED_OUT",
+      "billStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "totalAmount": 630000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:34.344Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000005",
+    "docType": "booking",
+    "docLinkId": "5f326332-35eb-49dd-be33-ae0e64be6fdd",
+    "docCtx": {
+      "room": "202",
+      "guest": "Khách ở UAT-01-5",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "f43ff993-c2f5-4097-b8d2-f158e8499090",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CHECK_OUT",
+    "entityType": "Booking",
+    "entityId": "297795fe-1c1f-4dbd-9869-6d88856b640c",
+    "oldValues": {
+      "status": "CHECKED_IN"
+    },
+    "newValues": {
+      "status": "CHECKED_OUT",
+      "billStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "totalAmount": 830000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:34.189Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000003",
+    "docType": "booking",
+    "docLinkId": "34944a22-63b9-4f4a-98a7-904a1b8e2fbb",
+    "docCtx": {
+      "room": "106",
+      "guest": "Khách ở UAT-01-3",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "d86f7523-bb61-45d2-ac71-2ee8524cdf17",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CHECK_OUT",
+    "entityType": "Booking",
+    "entityId": "73fcab9f-519f-4057-9fbb-8876f3536a63",
+    "oldValues": {
+      "status": "CHECKED_IN"
+    },
+    "newValues": {
+      "status": "CHECKED_OUT",
+      "billStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "totalAmount": 605000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:33.972Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000001",
+    "docType": "booking",
+    "docLinkId": "050f4bce-a64d-4340-81bc-e46448b7a095",
+    "docCtx": {
+      "room": "104",
+      "guest": "Khách ở UAT-01-1",
+      "afterCheckout": true
+    }
+  },
+  {
+    "id": "7063a18e-9b11-4340-894f-27c9028fb3ed",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "966fa5e6-a421-4d55-b030-77e1558709a3",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 730000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "BANK_TRANSFER",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 430000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:33.739Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000008",
+    "docType": "bill",
+    "docLinkId": "966fa5e6-a421-4d55-b030-77e1558709a3",
+    "docCtx": {
+      "room": "301",
+      "guest": "Khách ở UAT-01-8",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "a06a1f63-7073-4d89-95f2-13ba82e1cece",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "966fa5e6-a421-4d55-b030-77e1558709a3",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:33.610Z",
+    "user": null,
+    "docNo": "BL-4CDB-000008",
+    "docType": "bill",
+    "docLinkId": "966fa5e6-a421-4d55-b030-77e1558709a3",
+    "docCtx": {
+      "room": "301",
+      "guest": "Khách ở UAT-01-8",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "de7199c5-6e93-406b-b9b1-37c10f0f3132",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "966fa5e6-a421-4d55-b030-77e1558709a3",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:33.517Z",
+    "user": null,
+    "docNo": "BL-4CDB-000008",
+    "docType": "bill",
+    "docLinkId": "966fa5e6-a421-4d55-b030-77e1558709a3",
+    "docCtx": {
+      "room": "301",
+      "guest": "Khách ở UAT-01-8",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "688562b2-43e2-4f1c-b5b5-3ab5e2ad5578",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "62933ade-d76e-4498-9dc5-434a1225bdf1",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-01-8",
+      "roomNumber": "301",
+      "discountPct": 0,
+      "totalAmount": 800000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:33.382Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000008",
+    "docType": "booking",
+    "docLinkId": "966fa5e6-a421-4d55-b030-77e1558709a3",
+    "docCtx": {
+      "room": "301",
+      "guest": "Khách ở UAT-01-8",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "60eccfb9-7266-4c5a-ae57-a5c7517a6897",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "890ad9ad-b7a1-4907-89b0-3295bb38819b",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 595000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "CASH",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 295000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:33.230Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000007",
+    "docType": "bill",
+    "docLinkId": "890ad9ad-b7a1-4907-89b0-3295bb38819b",
+    "docCtx": {
+      "room": "204",
+      "guest": "Khách ở UAT-01-7",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "8976cebc-9de4-4bd3-869c-3ed3e8e5c5ce",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "890ad9ad-b7a1-4907-89b0-3295bb38819b",
+    "oldValues": null,
+    "newValues": {
+      "type": "PERCENT",
+      "description": "Giảm giá: Khách quen (thử)",
+      "discountAmount": 35000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:33.145Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000007",
+    "docType": "bill",
+    "docLinkId": "890ad9ad-b7a1-4907-89b0-3295bb38819b",
+    "docCtx": {
+      "room": "204",
+      "guest": "Khách ở UAT-01-7",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "baad937b-24a3-4bc0-b987-b45d2de08883",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "890ad9ad-b7a1-4907-89b0-3295bb38819b",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:33.028Z",
+    "user": null,
+    "docNo": "BL-4CDB-000007",
+    "docType": "bill",
+    "docLinkId": "890ad9ad-b7a1-4907-89b0-3295bb38819b",
+    "docCtx": {
+      "room": "204",
+      "guest": "Khách ở UAT-01-7",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "30c0b629-8e29-4bc2-9b60-ebbaa9d2d5e3",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "890ad9ad-b7a1-4907-89b0-3295bb38819b",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:32.916Z",
+    "user": null,
+    "docNo": "BL-4CDB-000007",
+    "docType": "bill",
+    "docLinkId": "890ad9ad-b7a1-4907-89b0-3295bb38819b",
+    "docCtx": {
+      "room": "204",
+      "guest": "Khách ở UAT-01-7",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "e27d78eb-df3f-4594-ac59-c9cec267028b",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "63a147b7-4647-45d3-9cf1-42976d7a2e30",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-01-7",
+      "roomNumber": "204",
+      "discountPct": 0,
+      "totalAmount": 700000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:32.773Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000007",
+    "docType": "booking",
+    "docLinkId": "890ad9ad-b7a1-4907-89b0-3295bb38819b",
+    "docCtx": {
+      "room": "204",
+      "guest": "Khách ở UAT-01-7",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "8a96bdf0-cb85-4fc7-8c8b-7484d3de0677",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "f161f37d-a808-4f2b-8476-41970a795596",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 530000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "BANK_TRANSFER",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 230000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:32.583Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000006",
+    "docType": "bill",
+    "docLinkId": "f161f37d-a808-4f2b-8476-41970a795596",
+    "docCtx": {
+      "room": "203",
+      "guest": "Khách ở UAT-01-6",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "d824b705-1d7f-4791-bf26-9c9ee3f2f71d",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "f161f37d-a808-4f2b-8476-41970a795596",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:32.482Z",
+    "user": null,
+    "docNo": "BL-4CDB-000006",
+    "docType": "bill",
+    "docLinkId": "f161f37d-a808-4f2b-8476-41970a795596",
+    "docCtx": {
+      "room": "203",
+      "guest": "Khách ở UAT-01-6",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "b22bf370-1291-4fb0-9502-703094e4b9cd",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "f161f37d-a808-4f2b-8476-41970a795596",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:32.367Z",
+    "user": null,
+    "docNo": "BL-4CDB-000006",
+    "docType": "bill",
+    "docLinkId": "f161f37d-a808-4f2b-8476-41970a795596",
+    "docCtx": {
+      "room": "203",
+      "guest": "Khách ở UAT-01-6",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "eaf24b33-bc7b-4da0-b978-3e1ff2183cc1",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "9587c081-6ac7-481e-9fa4-3d377998f374",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-01-6",
+      "roomNumber": "203",
+      "discountPct": 0,
+      "totalAmount": 600000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:32.283Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000006",
+    "docType": "booking",
+    "docLinkId": "f161f37d-a808-4f2b-8476-41970a795596",
+    "docCtx": {
+      "room": "203",
+      "guest": "Khách ở UAT-01-6",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "d5ecd33f-e9e9-4cbc-a884-fe0cdb0df2c7",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "5f326332-35eb-49dd-be33-ae0e64be6fdd",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 430000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "CASH",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 130000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:32.131Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000005",
+    "docType": "bill",
+    "docLinkId": "5f326332-35eb-49dd-be33-ae0e64be6fdd",
+    "docCtx": {
+      "room": "202",
+      "guest": "Khách ở UAT-01-5",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "ac09110d-ab68-46d2-9b08-4762fde92cd9",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "5f326332-35eb-49dd-be33-ae0e64be6fdd",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:32.051Z",
+    "user": null,
+    "docNo": "BL-4CDB-000005",
+    "docType": "bill",
+    "docLinkId": "5f326332-35eb-49dd-be33-ae0e64be6fdd",
+    "docCtx": {
+      "room": "202",
+      "guest": "Khách ở UAT-01-5",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "e0cae000-d259-4bd9-ab26-043f139164fe",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "5f326332-35eb-49dd-be33-ae0e64be6fdd",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:31.957Z",
+    "user": null,
+    "docNo": "BL-4CDB-000005",
+    "docType": "bill",
+    "docLinkId": "5f326332-35eb-49dd-be33-ae0e64be6fdd",
+    "docCtx": {
+      "room": "202",
+      "guest": "Khách ở UAT-01-5",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "5a48b50c-4384-4a02-80e2-607fe4f86c31",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "722292fd-0526-42d9-aa23-b4714065198c",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-01-5",
+      "roomNumber": "202",
+      "discountPct": 0,
+      "totalAmount": 500000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:31.793Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000005",
+    "docType": "booking",
+    "docLinkId": "5f326332-35eb-49dd-be33-ae0e64be6fdd",
+    "docCtx": {
+      "room": "202",
+      "guest": "Khách ở UAT-01-5",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "fe631172-607b-4bab-9023-94658a76eedb",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "fecb6c81-88d5-4146-933e-d0932c42eb10",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 690000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "BANK_TRANSFER",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 390000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:31.613Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000004",
+    "docType": "bill",
+    "docLinkId": "fecb6c81-88d5-4146-933e-d0932c42eb10",
+    "docCtx": {
+      "room": "201",
+      "guest": "Khách ở UAT-01-4",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "e382ab24-26f7-417f-a428-1830bfbe741b",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "fecb6c81-88d5-4146-933e-d0932c42eb10",
+    "oldValues": null,
+    "newValues": {
+      "type": "PERCENT",
+      "description": "Giảm giá: Khách quen (thử)",
+      "discountAmount": 40000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:31.481Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000004",
+    "docType": "bill",
+    "docLinkId": "fecb6c81-88d5-4146-933e-d0932c42eb10",
+    "docCtx": {
+      "room": "201",
+      "guest": "Khách ở UAT-01-4",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "d49bd7a9-a844-4f70-bac2-e253954da13a",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "fecb6c81-88d5-4146-933e-d0932c42eb10",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:31.392Z",
+    "user": null,
+    "docNo": "BL-4CDB-000004",
+    "docType": "bill",
+    "docLinkId": "fecb6c81-88d5-4146-933e-d0932c42eb10",
+    "docCtx": {
+      "room": "201",
+      "guest": "Khách ở UAT-01-4",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "1444c316-20e5-45ce-afc1-960ff4303bf3",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "fecb6c81-88d5-4146-933e-d0932c42eb10",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:31.300Z",
+    "user": null,
+    "docNo": "BL-4CDB-000004",
+    "docType": "bill",
+    "docLinkId": "fecb6c81-88d5-4146-933e-d0932c42eb10",
+    "docCtx": {
+      "room": "201",
+      "guest": "Khách ở UAT-01-4",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "bb6aa821-4192-4bcd-b775-b91e98949dfc",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "f126590f-464d-420b-b7ea-c8249294e765",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-01-4",
+      "roomNumber": "201",
+      "discountPct": 0,
+      "totalAmount": 800000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:31.155Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000004",
+    "docType": "booking",
+    "docLinkId": "fecb6c81-88d5-4146-933e-d0932c42eb10",
+    "docCtx": {
+      "room": "201",
+      "guest": "Khách ở UAT-01-4",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "53692455-8f40-4398-958b-1a58654b31f0",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "34944a22-63b9-4f4a-98a7-904a1b8e2fbb",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 630000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "CASH",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 330000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:30.990Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000003",
+    "docType": "bill",
+    "docLinkId": "34944a22-63b9-4f4a-98a7-904a1b8e2fbb",
+    "docCtx": {
+      "room": "106",
+      "guest": "Khách ở UAT-01-3",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "f103318d-c972-45a2-bf24-caba288280a2",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "34944a22-63b9-4f4a-98a7-904a1b8e2fbb",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:30.884Z",
+    "user": null,
+    "docNo": "BL-4CDB-000003",
+    "docType": "bill",
+    "docLinkId": "34944a22-63b9-4f4a-98a7-904a1b8e2fbb",
+    "docCtx": {
+      "room": "106",
+      "guest": "Khách ở UAT-01-3",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "be9ee7db-f9d4-4779-9db9-57a9411a4a69",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "34944a22-63b9-4f4a-98a7-904a1b8e2fbb",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:30.784Z",
+    "user": null,
+    "docNo": "BL-4CDB-000003",
+    "docType": "bill",
+    "docLinkId": "34944a22-63b9-4f4a-98a7-904a1b8e2fbb",
+    "docCtx": {
+      "room": "106",
+      "guest": "Khách ở UAT-01-3",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "da9870a6-371a-4914-8c94-7fa6319619dc",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "297795fe-1c1f-4dbd-9869-6d88856b640c",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-01-3",
+      "roomNumber": "106",
+      "discountPct": 0,
+      "totalAmount": 700000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:30.634Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000003",
+    "docType": "booking",
+    "docLinkId": "34944a22-63b9-4f4a-98a7-904a1b8e2fbb",
+    "docCtx": {
+      "room": "106",
+      "guest": "Khách ở UAT-01-3",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "557a8ad0-dbe9-4bb0-9718-c6522674ba55",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "b0f26766-5a94-414c-8392-217f490ed8f0",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 530000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "BANK_TRANSFER",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 230000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:30.473Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000002",
+    "docType": "bill",
+    "docLinkId": "b0f26766-5a94-414c-8392-217f490ed8f0",
+    "docCtx": {
+      "room": "105",
+      "guest": "Khách ở UAT-01-2",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "0ec0ba30-0629-411b-b545-244593f142bc",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "b0f26766-5a94-414c-8392-217f490ed8f0",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:30.398Z",
+    "user": null,
+    "docNo": "BL-4CDB-000002",
+    "docType": "bill",
+    "docLinkId": "b0f26766-5a94-414c-8392-217f490ed8f0",
+    "docCtx": {
+      "room": "105",
+      "guest": "Khách ở UAT-01-2",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "85e0e64a-5f4a-489f-ab97-df9fbc61dc72",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "b0f26766-5a94-414c-8392-217f490ed8f0",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:30.294Z",
+    "user": null,
+    "docNo": "BL-4CDB-000002",
+    "docType": "bill",
+    "docLinkId": "b0f26766-5a94-414c-8392-217f490ed8f0",
+    "docCtx": {
+      "room": "105",
+      "guest": "Khách ở UAT-01-2",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "441df39d-a9df-4627-9ecf-6cf6241fda46",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "22dda81d-c0c8-4180-a8af-bb44509ed9e3",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-01-2",
+      "roomNumber": "105",
+      "discountPct": 0,
+      "totalAmount": 600000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:30.172Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000002",
+    "docType": "booking",
+    "docLinkId": "b0f26766-5a94-414c-8392-217f490ed8f0",
+    "docCtx": {
+      "room": "105",
+      "guest": "Khách ở UAT-01-2",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "8bf3ba1c-9a99-4bfc-a037-cc82c40780c1",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "PAYMENT",
+    "entityType": "Bill",
+    "entityId": "050f4bce-a64d-4340-81bc-e46448b7a095",
+    "oldValues": {
+      "paidAmount": 200000,
+      "remainingAmount": 405000
+    },
+    "newValues": {
+      "amount": 300000,
+      "method": "CASH",
+      "newStatus": "PARTIAL",
+      "paidAmount": 500000,
+      "remainingAmount": 105000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:30.051Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000001",
+    "docType": "bill",
+    "docLinkId": "050f4bce-a64d-4340-81bc-e46448b7a095",
+    "docCtx": {
+      "room": "104",
+      "guest": "Khách ở UAT-01-1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "1e00fa1b-842d-4e3d-86ca-5c8b68f332c8",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "050f4bce-a64d-4340-81bc-e46448b7a095",
+    "oldValues": null,
+    "newValues": {
+      "type": "PERCENT",
+      "description": "Giảm giá: Khách quen (thử)",
+      "discountAmount": 25000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:29.968Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000001",
+    "docType": "bill",
+    "docLinkId": "050f4bce-a64d-4340-81bc-e46448b7a095",
+    "docCtx": {
+      "room": "104",
+      "guest": "Khách ở UAT-01-1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "897f94b1-4191-4268-b4ff-f37b2ffdf662",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "050f4bce-a64d-4340-81bc-e46448b7a095",
+    "oldValues": null,
+    "newValues": {
+      "type": "MINIBAR",
+      "amount": 50000,
+      "description": "Nước suối + snack"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:29.852Z",
+    "user": null,
+    "docNo": "BL-4CDB-000001",
+    "docType": "bill",
+    "docLinkId": "050f4bce-a64d-4340-81bc-e46448b7a095",
+    "docCtx": {
+      "room": "104",
+      "guest": "Khách ở UAT-01-1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "0e0cd00a-c3f2-4c50-a4c5-17f4d58c3904",
+    "userId": null,
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "ADD_BILL_ITEM",
+    "entityType": "Bill",
+    "entityId": "050f4bce-a64d-4340-81bc-e46448b7a095",
+    "oldValues": null,
+    "newValues": {
+      "type": "SERVICE",
+      "amount": 80000,
+      "description": "Giặt ủi nhanh"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:29.719Z",
+    "user": null,
+    "docNo": "BL-4CDB-000001",
+    "docType": "bill",
+    "docLinkId": "050f4bce-a64d-4340-81bc-e46448b7a095",
+    "docCtx": {
+      "room": "104",
+      "guest": "Khách ở UAT-01-1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "b545f6e3-9f0f-4c49-8b7a-0943e5ac7b66",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CHECK_IN",
+    "entityType": "Booking",
+    "entityId": "73fcab9f-519f-4057-9fbb-8876f3536a63",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách ở UAT-01-1",
+      "roomNumber": "104",
+      "discountPct": 0,
+      "totalAmount": 500000,
+      "depositAmount": 200000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:29.535Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "BL-4CDB-000001",
+    "docType": "booking",
+    "docLinkId": "050f4bce-a64d-4340-81bc-e46448b7a095",
+    "docCtx": {
+      "room": "104",
+      "guest": "Khách ở UAT-01-1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "a1db77be-4488-4754-9828-2215b012b90d",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "45d9cba1-4a01-44b8-9dfa-fc5f978514e1",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách đặt UAT-01-6",
+      "reservationCode": "RSV-000006"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:29.296Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000006",
+    "docType": "reservation",
+    "docLinkId": "45d9cba1-4a01-44b8-9dfa-fc5f978514e1",
+    "docCtx": {
+      "room": null,
+      "guest": "Khách đặt UAT-01-6",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "4f41bdb9-03e7-4634-a42a-7afe58fd2478",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "f867ecc4-98b3-496d-b61d-56e981a3bf58",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách đặt UAT-01-5",
+      "reservationCode": "RSV-000005"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:29.168Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000005",
+    "docType": "reservation",
+    "docLinkId": "f867ecc4-98b3-496d-b61d-56e981a3bf58",
+    "docCtx": {
+      "room": null,
+      "guest": "Khách đặt UAT-01-5",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "4b2c2f9f-6ec3-4b9a-ad51-bd141ee74d40",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "ad846bdf-0ec9-46f9-ad50-2e7d223fa129",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách đặt UAT-01-4",
+      "reservationCode": "RSV-000004"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:29.006Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000004",
+    "docType": "reservation",
+    "docLinkId": "ad846bdf-0ec9-46f9-ad50-2e7d223fa129",
+    "docCtx": {
+      "room": null,
+      "guest": "Khách đặt UAT-01-4",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "eb126b52-d86d-4783-84de-e782bdcae3ce",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "ee881460-5034-430a-a301-aa470eaac928",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách đặt UAT-01-3",
+      "reservationCode": "RSV-000003"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:28.866Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000003",
+    "docType": "reservation",
+    "docLinkId": "ee881460-5034-430a-a301-aa470eaac928",
+    "docCtx": {
+      "room": null,
+      "guest": "Khách đặt UAT-01-3",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "b2410e19-cfcf-4a1d-bc7b-3a5cfaa56deb",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "47ef51d1-06dc-40e9-9cd2-0ffcec5eda7c",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách đặt UAT-01-2",
+      "reservationCode": "RSV-000002"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:28.670Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000002",
+    "docType": "reservation",
+    "docLinkId": "47ef51d1-06dc-40e9-9cd2-0ffcec5eda7c",
+    "docCtx": {
+      "room": null,
+      "guest": "Khách đặt UAT-01-2",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "9a7a7311-738e-49be-834c-1a3a9b6e5591",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CREATE",
+    "entityType": "Reservation",
+    "entityId": "2b026bbd-0785-4be3-95a8-3a6053fb5405",
+    "oldValues": null,
+    "newValues": {
+      "guestName": "Khách đặt UAT-01-1",
+      "reservationCode": "RSV-000001"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:28.527Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "RSV-000001",
+    "docType": "reservation",
+    "docLinkId": "2b026bbd-0785-4be3-95a8-3a6053fb5405",
+    "docCtx": {
+      "room": null,
+      "guest": "Khách đặt UAT-01-1",
+      "afterCheckout": false
+    }
+  },
+  {
+    "id": "32740f43-9b60-4a15-b54c-1d6994fe741a",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CASH_VOUCHER_CREATE",
+    "entityType": "CashVoucher",
+    "entityId": "45d7c63c-aa5b-4afa-bd58-df243a9309b6",
+    "oldValues": null,
+    "newValues": {
+      "amount": 2500000,
+      "method": "Tiền mặt (VND)",
+      "category": "Đổi ngoại tệ",
+      "direction": "OUT",
+      "voucherNo": "PC-2026-0002",
+      "description": "Đổi ngoại tệ — vế tiền mặt VNĐ (cặp PT-2026-0002)"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:28.249Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PC-2026-0002",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "fdb39af0-254c-4b8d-a01e-8ab3d492d27c",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CASH_VOUCHER_CREATE",
+    "entityType": "CashVoucher",
+    "entityId": "4662b998-6139-463e-88c8-10ff5942d55c",
+    "oldValues": null,
+    "newValues": {
+      "amount": 2500000,
+      "method": "Ngoại tệ",
+      "category": "Đổi ngoại tệ",
+      "amountUsd": "100 USD",
+      "direction": "IN",
+      "voucherNo": "PT-2026-0002"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:28.243Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PT-2026-0002",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "dc1851f6-85f2-4750-852c-158d1893d5b4",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CASH_VOUCHER_CREATE",
+    "entityType": "CashVoucher",
+    "entityId": "709b1e4e-0139-48bd-b25b-edab97125529",
+    "oldValues": null,
+    "newValues": {
+      "amount": 150000,
+      "method": "Tiền mặt (VND)",
+      "category": "Chi khác",
+      "direction": "OUT",
+      "partyName": "Chi văn phòng phẩm",
+      "voucherNo": "PC-2026-0001",
+      "description": "Mua VPP"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:28.163Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PC-2026-0001",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "f1168f59-a1df-493e-bcad-c82d5717082c",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CASH_VOUCHER_CREATE",
+    "entityType": "CashVoucher",
+    "entityId": "1b404dc8-8d04-4aa1-a5bd-e8d98b0b15f0",
+    "oldValues": null,
+    "newValues": {
+      "amount": 500000,
+      "method": "Tiền mặt (VND)",
+      "category": "Thu khác",
+      "direction": "IN",
+      "partyName": "Khách lẻ 62gfpt",
+      "voucherNo": "PT-2026-0001",
+      "description": "Thu khác tại quầy"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:28.086Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": "PT-2026-0001",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "b6d14b63-6c92-4514-8e82-b8ff4cf3b81c",
+    "userId": "549876b3-a623-4cfc-b282-bcd1066fc631",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CASH_SHIFT_OPEN",
+    "entityType": "CashShift",
+    "entityId": "3b3e294b-4bb8-4bc9-be2d-7913a5fd7d38",
+    "oldValues": null,
+    "newValues": {
+      "shiftNumber": null,
+      "allowParallel": false,
+      "openingBalance": 1000000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:27.993Z",
+    "user": {
+      "fullName": "Kiểm thử - Lễ tân cơ sở A",
+      "username": "pt.le.tan.a",
+      "role": "RECEPTIONIST"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "da5c2793-bf40-47a2-a63a-41b0ce12073e",
+    "userId": "bf3d66e8-464f-4d8d-a0dd-03538e9f93a7",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CURRENCY_RATE_CREATE",
+    "entityType": "CurrencyRate",
+    "entityId": "acca75c9-fe08-4a7b-8576-c1ff85bb64c1",
+    "oldValues": {},
+    "newValues": {
+      "note": null,
+      "rate": 25000,
+      "scope": "TOÀN HỆ THỐNG",
+      "buyRate": null,
+      "currency": "USD",
+      "sellRate": null,
+      "effectiveDate": "2026-09-17"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:27.924Z",
+    "user": {
+      "fullName": "Kiểm thử - Kế toán cơ sở A",
+      "username": "pt.ke.toan",
+      "role": "ACCOUNTANT"
+    },
+    "docNo": null,
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "3bf322c0-03e3-4396-a874-44e214e78569",
+    "userId": "a94ef261-44eb-47ed-af79-6dd82ffc34e2",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CREATE",
+    "entityType": "SEASON_RATE",
+    "entityId": "32afbcf4-0f47-41b1-b965-0d37dbfed7e4",
+    "oldValues": null,
+    "newValues": {
+      "name": "Cao điểm hè (thử)",
+      "endDate": "2026-11-06",
+      "endTime": null,
+      "startDate": "2026-10-07",
+      "startTime": null,
+      "ratePlanId": null,
+      "roomTypeId": "8769d116-e268-4363-9a63-b4b7a8208502",
+      "priceHourly": null,
+      "priceWeekday": 900000,
+      "priceWeekend": 1100000
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:27.841Z",
+    "user": {
+      "fullName": "Kiểm thử - Quản trị chuỗi",
+      "username": "pt.admin",
+      "role": "ADMIN"
+    },
+    "docNo": "Cao điểm hè (thử)",
+    "docType": null,
+    "docLinkId": null,
+    "docCtx": null
+  },
+  {
+    "id": "ff9f30c9-88e6-43b7-b41b-c530aeb3fe8f",
+    "userId": "2fe01d98-1438-4d5e-ae48-7075f95d4596",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CREATE",
+    "entityType": "StockVoucher",
+    "entityId": "56430bb5-aa50-4a26-bbe9-9d15342dfa18",
+    "oldValues": null,
+    "newValues": {
+      "code": "PXK-000001",
+      "lines": 1,
+      "reason": "Xuất dùng buồng phòng",
+      "status": "CONFIRMED",
+      "supplier": null,
+      "totalAmount": 60000,
+      "voucherKind": null,
+      "voucherType": "ISSUE",
+      "paymentMethod": null
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:27.370Z",
+    "user": {
+      "fullName": "Kiểm thử - Nhân viên kho cơ sở A",
+      "username": "pt.kho",
+      "role": "WAREHOUSE_STAFF"
+    },
+    "docNo": "PXK-000001",
+    "docType": "stockVoucher",
+    "docLinkId": "56430bb5-aa50-4a26-bbe9-9d15342dfa18",
+    "docCtx": null
+  },
+  {
+    "id": "18acdc94-c927-4893-9eb0-655b5be6a2b7",
+    "userId": "2fe01d98-1438-4d5e-ae48-7075f95d4596",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "STOCK_VOUCHER_CONFIRM",
+    "entityType": "StockVoucher",
+    "entityId": "3f271ac5-e54c-4689-ab85-777af51ef5b7",
+    "oldValues": {
+      "code": "PNK-000001",
+      "status": "DRAFT"
+    },
+    "newValues": {
+      "code": "PNK-000001",
+      "lines": 5,
+      "status": "CONFIRMED",
+      "supplier": null,
+      "totalAmount": 7500000,
+      "voucherKind": "NEW",
+      "voucherType": "RECEIPT"
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:27.227Z",
+    "user": {
+      "fullName": "Kiểm thử - Nhân viên kho cơ sở A",
+      "username": "pt.kho",
+      "role": "WAREHOUSE_STAFF"
+    },
+    "docNo": "PNK-000001",
+    "docType": "stockVoucher",
+    "docLinkId": "3f271ac5-e54c-4689-ab85-777af51ef5b7",
+    "docCtx": null
+  },
+  {
+    "id": "fe46f6df-d277-4d90-b65c-32c919adb599",
+    "userId": "2fe01d98-1438-4d5e-ae48-7075f95d4596",
+    "actorName": null,
+    "propertyId": "4cdb49ae-8207-4560-8468-7ba598f3f638",
+    "action": "CREATE",
+    "entityType": "StockVoucher",
+    "entityId": "3f271ac5-e54c-4689-ab85-777af51ef5b7",
+    "oldValues": null,
+    "newValues": {
+      "code": "PNK-000001",
+      "lines": 5,
+      "reason": null,
+      "status": "DRAFT",
+      "supplier": null,
+      "totalAmount": 7500000,
+      "voucherKind": null,
+      "voucherType": "RECEIPT",
+      "paymentMethod": null
+    },
+    "ipAddress": "127.0.0.1",
+    "userAgent": "node",
+    "createdAt": "2026-09-17T05:04:26.988Z",
+    "user": {
+      "fullName": "Kiểm thử - Nhân viên kho cơ sở A",
+      "username": "pt.kho",
+      "role": "WAREHOUSE_STAFF"
+    },
+    "docNo": "PNK-000001",
+    "docType": "stockVoucher",
+    "docLinkId": "3f271ac5-e54c-4689-ab85-777af51ef5b7",
+    "docCtx": null
+  }
+]

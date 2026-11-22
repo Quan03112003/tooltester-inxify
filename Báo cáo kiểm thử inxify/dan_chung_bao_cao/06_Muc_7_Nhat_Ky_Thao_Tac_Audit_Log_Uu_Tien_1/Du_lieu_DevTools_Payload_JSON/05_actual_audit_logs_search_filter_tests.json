@@ -1,0 +1,325 @@
+[
+  {
+    "tcId": "TC-AL-PTC-007",
+    "business": "Phiếu thu chi",
+    "params": {
+      "page": 1,
+      "limit": 50,
+      "propertyId": "all",
+      "scope": "data",
+      "entityType": "CashVoucher",
+      "action": "CASH_VOUCHER_CREATE",
+      "search": "PC-2026-0002"
+    },
+    "response": {
+      "success": true,
+      "total": 0,
+      "page": 1,
+      "limit": 50,
+      "data": []
+    }
+  },
+  {
+    "tcId": "TC-AL-HT-007",
+    "business": "Hoàn tiền / Void TT",
+    "params": {
+      "page": 1,
+      "limit": 50,
+      "propertyId": "all",
+      "scope": "data",
+      "entityType": "Payment",
+      "action": "VOID_PAYMENT",
+      "search": "MK684-284749"
+    },
+    "response": {
+      "success": true,
+      "total": 3,
+      "page": 1,
+      "limit": 50,
+      "data": [
+        {
+          "id": "adc667c0-6ab5-43c6-982a-f96f0efbba2f",
+          "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+          "actorName": null,
+          "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+          "action": "VOID_PAYMENT",
+          "entityType": "Payment",
+          "entityId": "9572c9c8-0003-408a-9e6c-ce22d085e05c",
+          "oldValues": {
+            "paidAmount": 21687000,
+            "remainingAmount": 3388000
+          },
+          "newValues": {
+            "amount": 12000,
+            "method": "CARD",
+            "reason": "Điều chỉnh giảm số tiền đã thu: 12.000đ → 10.000đ · Khôi phục số tiền thu 10,000đ",
+            "paidAmount": 21675000,
+            "remainingAmount": 3400000
+          },
+          "ipAddress": "14.232.208.148",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+          "createdAt": "2026-11-19T07:38:57.058Z",
+          "user": {
+            "fullName": "40.HoangMinhQuan",
+            "username": "quanhm10",
+            "role": "ACCOUNTANT"
+          },
+          "docNo": "MK684-284749",
+          "docType": "bill",
+          "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+          "docCtx": {
+            "room": "1001",
+            "guest": "Call 2 - NC40A13NOV040 - AR",
+            "afterCheckout": true
+          }
+        },
+        {
+          "id": "68e9cb2f-7290-4df3-8232-3372154d1aa5",
+          "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+          "actorName": null,
+          "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+          "action": "VOID_PAYMENT",
+          "entityType": "Payment",
+          "entityId": "8c308c12-904e-4552-9e05-ad49244f2188",
+          "oldValues": {
+            "paidAmount": 21685000,
+            "remainingAmount": 3390000
+          },
+          "newValues": {
+            "amount": 10000,
+            "method": "CARD",
+            "reason": "Điều chỉnh tăng số tiền đã thu: 10.000đ → 12.000đ · TEST-QUAN sửa số tiền khoản thu",
+            "paidAmount": 21675000,
+            "remainingAmount": 3400000
+          },
+          "ipAddress": "14.232.208.148",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+          "createdAt": "2026-11-19T07:38:55.782Z",
+          "user": {
+            "fullName": "40.HoangMinhQuan",
+            "username": "quanhm10",
+            "role": "ACCOUNTANT"
+          },
+          "docNo": "MK684-284749",
+          "docType": "bill",
+          "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+          "docCtx": {
+            "room": "1001",
+            "guest": "Call 2 - NC40A13NOV040 - AR",
+            "afterCheckout": true
+          }
+        },
+        {
+          "id": "6b16a273-678a-4292-bc6b-dda50e3677d6",
+          "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+          "actorName": null,
+          "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+          "action": "VOID_PAYMENT",
+          "entityType": "Payment",
+          "entityId": "54b1a5ee-4dc0-454a-a5a5-00a5c2701964",
+          "oldValues": {
+            "paidAmount": 21685000,
+            "remainingAmount": 3390000
+          },
+          "newValues": {
+            "amount": 10000,
+            "method": "BANK_TRANSFER",
+            "reason": "Đổi hình thức thanh toán: Chuyển khoản → Thẻ · TEST-QUAN khách đổi PTTT sang thẻ",
+            "paidAmount": 21675000,
+            "remainingAmount": 3400000
+          },
+          "ipAddress": "14.232.208.148",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+          "createdAt": "2026-11-19T07:38:12.684Z",
+          "user": {
+            "fullName": "40.HoangMinhQuan",
+            "username": "quanhm10",
+            "role": "ACCOUNTANT"
+          },
+          "docNo": "MK684-284749",
+          "docType": "bill",
+          "docLinkId": "d58abea2-3be9-5486-8066-bf90caaf1866",
+          "docCtx": {
+            "room": "1001",
+            "guest": "Call 2 - NC40A13NOV040 - AR",
+            "afterCheckout": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "tcId": "TC-AL-COC-007",
+    "business": "Cọc",
+    "params": {
+      "page": 1,
+      "limit": 50,
+      "propertyId": "all",
+      "scope": "data",
+      "entityType": "Reservation",
+      "action": "ADJUST_DEPOSIT",
+      "search": "MK684-C8472F03",
+      "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a"
+    },
+    "response": {
+      "success": true,
+      "total": 2,
+      "page": 1,
+      "limit": 50,
+      "data": [
+        {
+          "id": "22658327-f938-4801-89c7-1b41baff7187",
+          "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+          "actorName": null,
+          "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+          "action": "ADJUST_DEPOSIT",
+          "entityType": "Reservation",
+          "entityId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+          "oldValues": {
+            "vouchers": 1,
+            "depositAmount": 3175001,
+            "depositMethod": "BANK_TRANSFER"
+          },
+          "newValues": {
+            "reason": "Khôi phục dữ liệu gốc sau kiểm thử",
+            "depositAmount": 3175000,
+            "depositMethod": "BANK_TRANSFER"
+          },
+          "ipAddress": "14.232.208.148",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+          "createdAt": "2026-11-19T07:34:41.203Z",
+          "user": {
+            "fullName": "40.HoangMinhQuan",
+            "username": "quanhm10",
+            "role": "ACCOUNTANT"
+          },
+          "docNo": "MK684-C8472F03",
+          "docType": "reservation",
+          "docLinkId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+          "docCtx": {
+            "room": null,
+            "guest": "Hắc Ngọc Kim",
+            "afterCheckout": false
+          }
+        },
+        {
+          "id": "8c75f205-7da4-4b0a-8a68-234d8697fe15",
+          "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+          "actorName": null,
+          "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+          "action": "ADJUST_DEPOSIT",
+          "entityType": "Reservation",
+          "entityId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+          "oldValues": {
+            "vouchers": 0,
+            "depositAmount": 3175000,
+            "depositMethod": "BANK_TRANSFER"
+          },
+          "newValues": {
+            "reason": "TEST-QUAN kiểm thử Audit Log sửa tiền cọc",
+            "depositAmount": 3175001,
+            "depositMethod": "BANK_TRANSFER"
+          },
+          "ipAddress": "14.232.208.148",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+          "createdAt": "2026-11-19T07:34:39.917Z",
+          "user": {
+            "fullName": "40.HoangMinhQuan",
+            "username": "quanhm10",
+            "role": "ACCOUNTANT"
+          },
+          "docNo": "MK684-C8472F03",
+          "docType": "reservation",
+          "docLinkId": "f72db078-e834-5896-a0c0-c71cc94f3bfe",
+          "docCtx": {
+            "room": null,
+            "guest": "Hắc Ngọc Kim",
+            "afterCheckout": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "tcId": "TC-AL-DP-007",
+    "business": "Sửa/Hủy đặt phòng",
+    "params": {
+      "page": 1,
+      "limit": 50,
+      "propertyId": "all",
+      "scope": "data",
+      "entityType": "Reservation",
+      "action": "CANCEL",
+      "search": "MK684-1484EFD0",
+      "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19"
+    },
+    "response": {
+      "success": true,
+      "total": 1,
+      "page": 1,
+      "limit": 50,
+      "data": [
+        {
+          "id": "eb5d4a18-b5e6-41cf-8601-f4d1f6cf42cf",
+          "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+          "actorName": null,
+          "propertyId": "cd5c1bd4-c6d4-5d88-aad9-52edc6aefdda",
+          "action": "CANCEL",
+          "entityType": "Reservation",
+          "entityId": "fa18f847-90da-519a-9e95-d903cf8f16ad",
+          "oldValues": {
+            "status": "CONFIRMED"
+          },
+          "newValues": {
+            "reason": "TEST-QUAN kiểm thử Audit Log hủy đặt phòng",
+            "status": "CANCELLED",
+            "guestName": "BenThanh Tourist",
+            "depositRefunded": 0,
+            "reservationCode": "MK684-1484EFD0"
+          },
+          "ipAddress": "14.232.208.148",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0.0.0",
+          "createdAt": "2026-11-19T07:38:58.324Z",
+          "user": {
+            "fullName": "40.HoangMinhQuan",
+            "username": "quanhm10",
+            "role": "ACCOUNTANT"
+          },
+          "docNo": "MK684-1484EFD0",
+          "docType": "reservation",
+          "docLinkId": "fa18f847-90da-519a-9e95-d903cf8f16ad",
+          "docCtx": {
+            "room": null,
+            "guest": "BenThanh Tourist",
+            "afterCheckout": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "tcId": "TC-AL-CN-007",
+    "business": "Công nợ",
+    "params": {
+      "page": 1,
+      "limit": 50,
+      "propertyId": "all",
+      "scope": "data",
+      "entityType": "Bill",
+      "action": "PAYMENT",
+      "search": "MK684-284749",
+      "userId": "b6b4b77f-d8fc-4388-a14c-6fc816061c6a",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19"
+    },
+    "response": {
+      "success": true,
+      "total": 0,
+      "page": 1,
+      "limit": 50,
+      "data": []
+    }
+  }
+]
