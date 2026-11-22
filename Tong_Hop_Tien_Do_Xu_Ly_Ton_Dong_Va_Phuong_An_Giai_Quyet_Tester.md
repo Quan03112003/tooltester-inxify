@@ -18,11 +18,11 @@
 
 ---
 
-## PHẦN I. DANH MỤC TOÀN BỘ CÁC ĐẦU MỤC CÔNG VIỆC TRONG DỰ ÁN
+## PHẦN I. DANH MỤC 09 ĐẦU MỤC CÔNG VIỆC KIỂM THỬ INXIFY PMS (THEO HRONLINE.MD)
 
-Toàn bộ công việc của chuyên viên kiểm thử trong giai đoạn vừa qua được phân thành 03 nhóm trọng tâm:
+Toàn bộ công việc của chuyên viên kiểm thử trong giai đoạn vừa qua tập trung trọn vẹn vào 09 đầu mục nhiệm vụ kiểm thử phần mềm Inxify PMS, được phân thành 02 nhóm nghiệp vụ trọng tâm:
 
-1. **Nhóm I: Kiểm thử Nghiệm thu Hệ thống Inxify PMS (Theo chỉ đạo HROnline tháng 11/2026):**
+1. **Nhóm I: Kiểm thử Nghiệm thu Hệ thống Inxify PMS (07 đầu mục theo chỉ đạo HROnline tháng 11/2026):**
    * *Đầu mục 1 (Mục 1 HROnline):* Thiết lập môi trường UAT Inxify độc lập & Khóa quyền sửa/xóa dữ liệu thật trên HBSoft.
    * *Đầu mục 2 (Mục 2 HROnline):* Lập bảng đối chiếu dữ liệu theo từng trường cho 02 màn hình Đặt phòng PMS và Khách hàng CRM.
    * *Đầu mục 3 (Mục 5 HROnline):* Xây dựng kịch bản kiểm thử nghiệm thu tính năng Quét mã QR Căn cước công dân (CCCD).
@@ -31,13 +31,9 @@ Toàn bộ công việc của chuyên viên kiểm thử trong giai đoạn vừ
    * *Đầu mục 6 (Mục 8 HROnline):* Văn bản tổng hợp yêu cầu kỹ thuật & Kịch bản nghiệm thu tính năng Hiển thị nguồn kênh đặt phòng và Mã tham chiếu OTA.
    * *Đầu mục 7 (Mục 9 HROnline):* Văn bản tổng hợp yêu cầu kỹ thuật & Kịch bản nghiệm thu tính năng Cảnh báo và kiểm soát khi nhận phòng chưa sẵn sàng.
 
-2. **Nhóm II: Chuẩn hóa Quy trình Tiếp nhận, Kiểm soát & Quản trị Phiếu yêu cầu phần mềm:**
+2. **Nhóm II: Chuẩn hóa Quy trình Tiếp nhận, Kiểm soát & Quản trị Phiếu yêu cầu phần mềm (02 đầu mục):**
    * *Đầu mục 8 (Mục 3 HROnline):* Thiết lập cơ chế kiểm soát đầu vào, kiên quyết từ chối tiếp nhận và trả lại phiếu thiếu trường bắt buộc, không chọn loại phản ánh. Báo cáo định kỳ thứ Hai hằng tuần.
    * *Đầu mục 9 (Mục 4 HROnline):* Lập và theo dõi vòng đời tối thiểu 03 phiếu yêu cầu phần mềm chuẩn hóa trên Sổ theo dõi hằng ngày từ 18/11/2026.
-
-3. **Nhóm III: Chuẩn hóa Môi trường Làm việc Số & Học liệu Đào tạo Microsoft 365 (Nhiệm vụ phối hợp):**
-   * *Đầu mục 10:* Lập Tờ trình & Báo cáo phương án chuẩn hóa Microsoft 365 (Outlook, Teams, OneDrive, Entra ID), phân định ranh giới độc tôn HROnline và lộ trình 7 ngày đóng nhóm Zalo văn phòng.
-   * *Đầu mục 11:* Xây dựng Bộ học liệu đa phương tiện: Video đào tạo thực tế MP4 HD 720p (02:05) giọng đọc Neural Microsoft (`vi-VN-NamMinhNeural`), Trình chiếu tương tác HTML5 và hướng dẫn thao tác từng bước.
 
 ---
 
@@ -49,11 +45,10 @@ Toàn bộ công việc của chuyên viên kiểm thử trong giai đoạn vừ
 | **2** | **Bảng đối chiếu 02 màn hình Inxify (Mục 2)** | - Hoàn thành trước hạn 02/12/2026.<br>- Tự khảo sát mã nguồn web, soi cấu trúc API F12 để phân tích chi tiết từng trường dữ liệu (tên trường, giá trị nhập, giá trị kỳ vọng, giá trị thực tế, đạt/không đạt). | - Bảng đối chiếu 20 trường màn hình Đặt phòng PMS (`DOI_CHIEU_MH1`).<br>- Bảng đối chiếu 18 trường màn hình Khách hàng CRM (`DOI_CHIEU_MH2`).<br>- Lưu tại file `Mau_Excel_QC_Inxify_DoiChieu_va_TheoDoiPhieu_Hoan_Chinh.xlsx`. | **ĐÃ HOÀN THÀNH 100%** |
 | **3** | **Kiểm soát tiếp nhận phiếu & Trả lại phiếu sai (Mục 3)** | - Áp dụng quy tắc từ chối phiếu từ 18/11/2026.<br>- Phát hiện và lập biên bản trả lại 01 phiếu yêu cầu không chọn loại phản ánh, không nêu bước tái hiện của Phòng Kinh doanh.<br>- Thiết lập công thức báo cáo tuần tự động trên Excel. | - Biên bản trả lại phiếu `YC-A25-20261118-004`.<br>- Bảng thống kê tuần tại sheet `BAO_CAO_TUAN` (Nhận: 4, Trả lại: 1, Đã đóng: 2, Thời gian xử lý: 1 ngày/phiếu). | **ĐÃ HOÀN THÀNH 100%** |
 | **4** | **Lập và theo dõi vòng đời phiếu thực tế (Mục 4)** | - Lập và theo dõi 04 phiếu thực tế (vượt chỉ tiêu tối thiểu 3 phiếu của Sếp).<br>- Theo dõi trạng thái từng ngày từ 18/11/2026 đến khi đóng phiếu. | - 04 phiếu trên sổ `THEO_DOI_PHIEU`:<br>  + YC-001 (Lỗi form đặt phòng) -> ĐÃ ĐÓNG.<br>  + YC-002 (Lỗi validate SĐT) -> ĐÃ ĐÓNG.<br>  + YC-003 (Yêu cầu hiển thị mã OTA) -> Đang xử lý.<br>  + YC-004 (Phiếu kinh doanh) -> Đã trả lại. | **ĐÃ HOÀN THÀNH 100%** |
-| **5** | **Kịch bản Quét QR CCCD (Mục 5 - Phần Kịch bản & Nhập tay)** | - Nghiên cứu cấu trúc chuỗi QR CCCD 7 trường chuẩn Bộ Công an.<br>- Lập bộ kịch bản kiểm thử nghiệm thu chi tiết.<br>- Kiểm tra xác nhận luồng nhập liệu thủ công bằng tay (Manual Input) hiện tại trên Inxify hoạt động bình thường (ĐÃ PASS). | - Tài liệu [Tai_lieu_Kich_ban_Kiem_thu_Nghiem_thu_Quet_QR_CCCD_Inxify_Muc_5.docx](file:///c:/Users/Admin/Desktop/tester/Tai_lieu_Kich_ban_Kiem_thu_Nghiem_thu_Quet_QR_CCCD_Inxify_Muc_5.docx).<br>- 06 Kịch bản kiểm thử nghiệm thu (TC-QR-01 đến TC-QR-06) kèm bộ dữ liệu giả lập (Mock Data). | **ĐÃ HOÀN THÀNH KỊCH BẢN** |
+| **5** | **Kịch bản Quét QR CCCD (Mục 5 - Phần Kịch bản & Nhập tay)** | - Nghiên cứu cấu trúc chuỗi QR CCCD 7 trường chuẩn Bộ Công an.<br>- Lập bộ kịch bản kiểm thử nghiệm thu chi tiết.<br>- Kiểm tra xác nhận luồng nhập liệu thủ công bằng tay (Manual Input) hiện tại trên Inxify hoạt động bình thường (ĐÃ PASS - TC-QR-06). | - Tài liệu [Tai_lieu_Kich_ban_Kiem_thu_Nghiem_thu_Quet_QR_CCCD_Inxify_Muc_5.docx](file:///c:/Users/Admin/Desktop/tester/Tai_lieu_Kich_ban_Kiem_thu_Nghiem_thu_Quet_QR_CCCD_Inxify_Muc_5.docx).<br>- 06 Kịch bản kiểm thử nghiệm thu (TC-QR-01 đến TC-QR-06) kèm bộ dữ liệu giả lập (Mock Data). | **ĐÃ HOÀN THÀNH KỊCH BẢN** |
 | **6** | **Cảnh báo lưu dữ liệu khi lưu (Mục 6)** | - Thiết kế 10 kịch bản kiểm thử nghiệm thu.<br>- Thực thi 100% trên môi trường UAT Inxify.<br>- Phát hiện 03 lỗi nghiệp vụ/validate dữ liệu.<br>- Thu thập 07 hình ảnh dẫn chứng chụp trực tiếp từ UAT. | - Báo cáo nghiệm thu [Bao_cao_Kiem_thu_Canh_bao_Luu_Du_lieu_Inxify_Muc_6_Co_Anh_Dan_Chung.docx](file:///c:/Users/Admin/Desktop/tester/Bao_cao_Kiem_thu_Canh_bao_Luu_Du_lieu_Inxify_Muc_6_Co_Anh_Dan_Chung.docx).<br>- 10 Test Cases (7 Pass, 3 Fail).<br>- 07 ảnh dẫn chứng UAT (M6_01 đến M6_07). | **ĐÃ HOÀN THÀNH 100%** |
 | **7** | **Nhật ký thao tác Audit Log (Mục 7 - Ưu tiên số 1)** | - Tiếp nhận Đặc tả BA v0.3 từ BA Châu Tuấn.<br>- Xây dựng Ma trận trường dữ liệu và Bộ kịch bản cho 05 nghiệp vụ trọng tâm (Thu chi, Hoàn tiền, Đặt cọc, Sửa/Hủy đặt phòng, Công nợ).<br>- Thực thi 100% trên UAT Inxify, phát hiện 08 lỗi ghi thiếu trường cũ/mới.<br>- Báo cáo Ban Giám đốc đúng hạn 20/11/2026. | - Báo cáo trình Ban Giám đốc [Bao_cao_Trinh_Ban_Giam_Doc_Ket_Qua_Nghiem_Thu_Audit_Log_Inxify_Muc_7.docx](file:///c:/Users/Admin/Desktop/tester/Bao_cao_Trinh_Ban_Giam_Doc_Ket_Qua_Nghiem_Thu_Audit_Log_Inxify_Muc_7.docx).<br>- File Excel [Template_TestCase_Audit_Log_Inxify_Thang_11_2026_Hoan_chinh.xlsx](file:///c:/Users/Admin/Desktop/tester/Template_TestCase_Audit_Log_Inxify_Thang_11_2026_Hoan_chinh.xlsx).<br>- 35 Test Cases (27 Pass, 8 Fail). | **ĐÃ HOÀN THÀNH 100%** |
 | **8 & 9** | **Nguồn kênh OTA & Cảnh báo phòng chưa sẵn sàng (Mục 8 & 9)** | - Khảo sát trực tiếp giao diện Inxify UAT.<br>- Quy chuẩn hóa 05 yêu cầu kỹ thuật chi tiết (`REQ-M8-01` đến `REQ-M9-02`).<br>- Xây dựng 08 kịch bản kiểm thử nghiệm thu đón đầu cho Dev. | - Văn bản kỹ thuật [Van_ban_Tong_hop_Yeu_cau_Ky_thuat_Nghiem_thu_Inxify_Muc_8_va_Muc_9_Co_Anh_Dan_Chung.docx](file:///c:/Users/Admin/Desktop/tester/Van_ban_Tong_hop_Yeu_cau_Ky_thuat_Nghiem_thu_Inxify_Muc_8_va_Muc_9_Co_Anh_Dan_Chung.docx).<br>- 05 Tiêu chuẩn kỹ thuật + 08 Test Cases. | **ĐÃ HOÀN THÀNH 100%** |
-| **10 & 11** | **Chuẩn hóa Microsoft 365 & Học liệu Video Đào tạo** | - Hoàn thiện Tờ trình phương án M365 (dự toán 8.6 triệu/tháng, ranh giới HROnline, quy tắc 7 ngày đóng Zalo).<br>- Sản xuất Video bài giảng thực hành MP4 HD 720p (02:05) thuyết minh giọng Neural Microsoft chuẩn xác, thao tác liên tục và phân Role rõ ràng.<br>- Xây dựng Trình duyệt video tương tác HTML5. | - Báo cáo Word [Bao_cao_Phuong_an_Chuan_hoa_Cong_cu_Microsoft_365_A25_Hotel.docx](file:///c:/Users/Admin/Desktop/tester/Bao_cao_Phuong_an_Chuan_hoa_Cong_cu_Microsoft_365_A25_Hotel.docx) (4.03 MB).<br>- Video [Video_Huong_Dan_Chuan_Hoa_Microsoft_365_A25_Hotel.mp4](file:///c:/Users/Admin/Desktop/tester/Video_Huong_Dan_Chuan_Hoa_Microsoft_365_A25_Hotel.mp4).<br>- Trình phát [Trung_Tam_Video_Huong_Dan_M365_A25_Hotel.html](file:///c:/Users/Admin/Desktop/tester/Trung_Tam_Video_Huong_Dan_M365_A25_Hotel.html). | **ĐÃ HOÀN THÀNH 100%** |
 
 ---
 

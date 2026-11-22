@@ -5,15 +5,10 @@ from docx.enum.table import WD_TABLE_ALIGNMENT, WD_ALIGN_VERTICAL
 from docx.oxml import parse_xml, OxmlElement
 from docx.oxml.ns import nsdecls, qn
 import os
-import shutil
 
 TARGET_FILE = r"c:\Users\Admin\Desktop\tester\PCNTT_MauBC.docx"
-BACKUP_FILE = r"c:\Users\Admin\Desktop\tester\PCNTT_MauBC_backup.docx"
 NAMED_FILE = r"c:\Users\Admin\Desktop\tester\Bao_cao_PCNTT_Tong_hop_Tien_do_Xu_ly_Ton_dong_va_Phuong_an_Giai_quyet.docx"
-
-if os.path.exists(TARGET_FILE) and not os.path.exists(BACKUP_FILE):
-    shutil.copy2(TARGET_FILE, BACKUP_FILE)
-    print("Created backup of PCNTT_MauBC.docx")
+BACKUP_DIR_FILE = r"c:\Users\Admin\Desktop\tester\dan_chung_bao_cao\08_Bao_Cao_Tong_Hop_PCNTT_Va_Ho_So_Thu_Viec\PCNTT_MauBC_Da_dien_chuan.docx"
 
 def set_cell_background(cell, fill_hex):
     tcPr = cell._tc.get_or_add_tcPr()
@@ -49,12 +44,12 @@ def add_heading_styled(doc, text, level=1):
         p.paragraph_format.space_before = Pt(12)
         p.paragraph_format.space_after = Pt(4)
         run.font.size = Pt(13)
-        run.font.color.rgb = RGBColor(0, 0, 0) # Administrative black
+        run.font.color.rgb = RGBColor(0, 0, 0)
     elif level == 2:
         p.paragraph_format.space_before = Pt(9)
         p.paragraph_format.space_after = Pt(3)
         run.font.size = Pt(13)
-        run.font.color.rgb = RGBColor(20, 50, 120) # Subtle deep blue
+        run.font.color.rgb = RGBColor(20, 50, 120)
     elif level == 3:
         p.paragraph_format.space_before = Pt(6)
         p.paragraph_format.space_after = Pt(2)
@@ -124,7 +119,7 @@ def create_full_report():
     p_sub = doc.add_paragraph()
     p_sub.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_sub.paragraph_format.space_after = Pt(10)
-    r_s = p_sub.add_run("V/v: Tổng hợp tiến độ thực hiện, các vấn đề đã xử lý, tồn đọng và phương án giải quyết trong công tác kiểm thử phần mềm Inxify PMS & Hệ thống số A25 Hotel")
+    r_s = p_sub.add_run("V/v: Tổng hợp tiến độ thực hiện, các vấn đề đã xử lý, tồn đọng và phương án giải quyết trong công tác kiểm thử phần mềm Inxify PMS (09 đầu mục thử việc)")
     r_s.bold = True
     r_s.font.name = "Times New Roman"
     r_s.font.size = Pt(12.5)
@@ -136,7 +131,7 @@ def create_full_report():
     p.paragraph_format.space_after = Pt(4)
     p.paragraph_format.line_spacing = 1.15
     p.add_run(
-        "• Căn cứ Kết luận chỉ đạo của Ban Giám đốc và Lãnh đạo Phòng Công nghệ thông tin tại văn bản hronline.md (tháng 11/2026) về 09 đầu mục nhiệm vụ trọng tâm;\n"
+        "• Căn cứ Kết luận chỉ đạo của Ban Giám đốc và Lãnh đạo Phòng Công nghệ thông tin tại văn bản hronline.md (tháng 11/2026) về 09 đầu mục nhiệm vụ trọng tâm kiểm thử phần mềm Inxify PMS;\n"
         "• Căn cứ Kết luận đánh giá Báo cáo sơ bộ sau 07 ngày thử việc của ứng viên Hoàng Minh Quân – vị trí Chuyên viên kiểm thử phần mềm (Ban Phát triển và Quản lý phần mềm – Phòng CNTT);\n"
         "• Căn cứ Kế hoạch thử việc và phân công nhiệm vụ kiểm thử hệ thống phần mềm Quản lý khách sạn Inxify PMS từ ngày 03/11/2026 đến ngày 02/12/2026;\n"
         "• Căn cứ Hiện trạng điều kiện kiểm thử thực tế tại đơn vị: Chuyên viên kiểm thử hiện tại CHỈ ĐƯỢC CUNG CẤP DUY NHẤT MÔI TRƯỜNG UAT PORTAL (https://uat.inxify.com), hoàn toàn chưa có tài liệu đặc tả yêu cầu nghiệp vụ chính thức (PRD/SRS), chưa có từ điển dữ liệu (Data Dictionary), chưa có bộ dữ liệu kiểm thử chuẩn (Standard Test Data) và chưa có thiết bị phần cứng kiểm thử chuyên dụng (đầu đọc mã vạch 2D CCCD, thẻ CCCD cứng thật)."
@@ -148,8 +143,8 @@ def create_full_report():
     p.paragraph_format.space_after = Pt(4)
     p.paragraph_format.line_spacing = 1.15
     p.add_run(
-        "• Báo cáo tổng thể toàn diện tiến độ triển khai toàn bộ các đầu mục công việc được giao trong dự án tính đến ngày 21/11/2026;\n"
-        "• Báo cáo chi tiết các vấn đề ĐÃ XỬ LÝ gắn liền với kết quả định lượng cụ thể, sản phẩm hồ sơ bàn giao, số lượng kịch bản kiểm thử, lỗi phát hiện và bằng chứng thực tế;\n"
+        "• Báo cáo tổng thể toàn diện tiến độ triển khai toàn bộ 09 đầu mục công việc kiểm thử phần mềm Inxify PMS được giao tính đến ngày 21/11/2026;\n"
+        "• Báo cáo chi tiết các vấn đề ĐÃ XỬ LÝ gắn liền với kết quả định lượng cụ thể (Bộ 04 con số định lượng Sếp yêu cầu), sản phẩm hồ sơ bàn giao, số lượng kịch bản kiểm thử, lỗi phát hiện và bằng chứng thực tế;\n"
         "• Báo cáo trung thực, minh bạch các vấn đề CÒN TỒN ĐỌNG và nguyên nhân khách quan xuất phát từ điều kiện thực tế (chỉ có UAT Portal, thiếu tài liệu và dữ liệu chuẩn, tính năng CCCD chưa có phần cứng và màn hình mới có form nhập tay);\n"
         "• Đề xuất PHƯƠNG ÁN GIẢI QUYẾT khả thi, chuyên nghiệp và kế hoạch hành động cụ thể để khắc phục toàn bộ các tồn đọng, bảo đảm hoàn thành hồ sơ kết thúc thử việc chất lượng cao trình Ban Giám đốc trước 16h00 ngày 02/12/2026."
     )
@@ -158,15 +153,14 @@ def create_full_report():
     add_heading_styled(doc, "III. NỘI DUNG BÁO CÁO", 1)
 
     # 1. Danh mục các đầu mục
-    add_heading_styled(doc, "1. Tổng hợp hiện trạng toàn bộ các đầu mục công việc trong dự án", 2)
+    add_heading_styled(doc, "1. Tổng hợp hiện trạng 09 đầu mục công việc kiểm thử Inxify PMS", 2)
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(4)
     p.paragraph_format.line_spacing = 1.15
     p.add_run(
-        "Trong giai đoạn thử việc vừa qua, chuyên viên kiểm thử Hoàng Minh Quân được giao phụ trách và phối hợp thực hiện 03 nhóm nhiệm vụ trọng tâm gồm 11 đầu mục công việc cụ thể:\n"
-        "• Nhóm I (Kiểm thử hệ thống Inxify PMS - 07 đầu mục): Gồm các Mục 1, 2, 5, 6, 7, 8, 9 theo chỉ đạo hronline.md (UAT Inxify, Đối chiếu 02 màn hình, Quét QR CCCD, Cảnh báo lưu dữ liệu, Nhật ký Audit Log, Nguồn kênh OTA, Cảnh báo nhận phòng chưa sẵn sàng).\n"
-        "• Nhóm II (Chuẩn hóa quy trình phiếu yêu cầu - 02 đầu mục): Gồm Mục 3 và Mục 4 (Kiểm soát từ chối phiếu thiếu trường, lập và theo dõi vòng đời tối thiểu 03 phiếu thực tế hằng ngày từ 18/11).\n"
-        "• Nhóm III (Chuẩn hóa hệ sinh thái số & Đào tạo M365 - 02 đầu mục): Xây dựng Báo cáo phương án chuẩn hóa Microsoft 365 và Sản xuất bộ học liệu đa phương tiện (Video HD 720p giọng Neural Microsoft 02:05, Trình phát tương tác HTML5)."
+        "Trong giai đoạn thử việc vừa qua, chuyên viên kiểm thử Hoàng Minh Quân được giao phụ trách thực hiện trọn vẹn 09 đầu mục công việc kiểm thử Inxify PMS theo chỉ đạo tại hronline.md, phân chia thành 02 nhóm nhiệm vụ nghiệp vụ cụ thể:\n"
+        "• Nhóm I (Kiểm thử chức năng hệ thống Inxify PMS - 07 đầu mục): Gồm các Mục 1, 2, 5, 6, 7, 8, 9 (Môi trường UAT Inxify, Đối chiếu 02 màn hình, Quét QR CCCD, Cảnh báo lưu dữ liệu, Nhật ký Audit Log, Nguồn kênh OTA, Cảnh báo nhận phòng chưa sẵn sàng).\n"
+        "• Nhóm II (Chuẩn hóa quy trình phiếu yêu cầu phần mềm - 02 đầu mục): Gồm Mục 3 và Mục 4 (Kiểm soát từ chối phiếu thiếu trường, lập và theo dõi vòng đời tối thiểu 03 phiếu thực tế hằng ngày từ ngày 18/11)."
     )
 
     # 2. Chi tiết các vấn đề đã xử lý
@@ -175,10 +169,10 @@ def create_full_report():
     p.paragraph_format.space_after = Pt(4)
     p.paragraph_format.line_spacing = 1.15
     p.add_run(
-        "Mặc dù gặp nhiều khó khăn về điều kiện kỹ thuật đầu vào, chuyên viên kiểm thử đã chủ động vận dụng tư duy logic kiểm thử, khảo sát mã nguồn giao diện web và cấu trúc API qua DevTools để hoàn thành khối lượng lớn công việc cụ thể:"
+        "Mặc dù gặp nhiều khó khăn về điều kiện kỹ thuật đầu vào (chỉ được cung cấp web UAT, không có PRD/SRS hay bộ dữ liệu chuẩn), chuyên viên kiểm thử đã chủ động vận dụng tư duy logic kiểm thử, khảo sát mã nguồn giao diện web và cấu trúc API qua DevTools để hoàn thành khối lượng lớn công việc cụ thể:"
     )
 
-    # Bảng tổng hợp đã xử lý
+    # Bảng tổng hợp đã xử lý (07 dòng nghiệp vụ cho 09 đầu mục)
     tbl_done = doc.add_table(rows=8, cols=4)
     tbl_done.alignment = WD_TABLE_ALIGNMENT.CENTER
     d_headers = ["Đầu mục công việc", "Nhiệm vụ theo chỉ đạo", "Kết quả đã xử lý thực tế", "Sản phẩm / Bằng chứng bàn giao"]
@@ -203,7 +197,7 @@ def create_full_report():
         ("Mục 1:\nMôi trường UAT", "Cấp tài khoản UAT Inxify; ký cam kết bảo mật; khóa quyền sửa HBSoft.", "Đã tiếp nhận 09 tài khoản phân quyền ngày 19/11; ký cam kết bảo mật và khóa tài khoản dữ liệu thật ngày 18/11.", "09 tài khoản phân quyền UAT (taikhoan.md); Biên bản cam kết bảo mật."),
         ("Mục 2:\nĐối chiếu 02 màn hình", "Lập bảng đối chiếu trường dữ liệu cho 02 màn hình trên Inxify (Hạn 02/12).", "Hoàn thành trước hạn: Lập bảng đối chiếu 20 trường Đặt phòng và 18 trường Khách hàng qua khảo sát web/API.", "File Excel Mau_Excel_QC_Inxify_DoiChieu_va_TheoDoiPhieu_Hoan_Chinh.xlsx."),
         ("Mục 3 & 4:\nKiểm soát phiếu yêu cầu", "Trả lại phiếu thiếu trường; lập và theo dõi tối thiểu 03 phiếu hằng ngày từ 18/11.", "Đã trả lại 01 phiếu sai chuẩn của Phòng Kinh doanh; lập và theo dõi 04 phiếu thực tế (đóng 2, đang xử lý 1, trả lại 1).", "Biên bản trả lại phiếu YC-A25-20261118-004; Sổ THEO_DOI_PHIEU và BAO_CAO_TUAN."),
-        ("Mục 5:\nQuét QR CCCD", "Viết kịch bản kiểm thử nghiệm thu tính năng trên Inxify.", "Đã lập 06 kịch bản nghiệm thu + Mock Data 7 trường BCA; kiểm thử xác nhận luồng nhập tay thủ công ĐÃ PASS.", "Tài liệu Tai_lieu_Kich_ban_Kiem_thu_Nghiem_thu_Quet_QR_CCCD_Inxify_Muc_5.docx."),
+        ("Mục 5:\nQuét QR CCCD", "Viết kịch bản kiểm thử nghiệm thu tính năng trên Inxify.", "Đã lập 06 kịch bản nghiệm thu + Mock Data 7 trường BCA; kiểm thử xác nhận luồng nhập tay thủ công ĐÃ PASS (TC-QR-06).", "Tài liệu Tai_lieu_Kich_ban_Kiem_thu_Nghiem_thu_Quet_QR_CCCD_Inxify_Muc_5.docx."),
         ("Mục 6:\nCảnh báo lưu dữ liệu", "Viết kịch bản và kiểm thử cảnh báo khi lưu cho Đặt phòng và Khách hàng.", "Thiết kế 10 kịch bản; chạy 100% trên UAT (7 Pass, 3 Fail); phát hiện 03 lỗi (thiếu viền đỏ, bỏ trống tên/giá, SĐT sai).", "Báo cáo nghiệm thu Bao_cao_Kiem_thu_Canh_bao_Luu_Du_lieu_Inxify_Muc_6_Co_Anh_Dan_Chung.docx (07 ảnh UAT)."),
         ("Mục 7:\nNhật ký Audit Log (Ưu tiên số 1)", "Kiểm thử nhật ký theo trường cho 05 nghiệp vụ trọng tâm (Hạn 20/11).", "Hoàn thành đúng hạn 20/11: Thiết kế Ma trận 35 TC; chạy 100% trên UAT (27 Pass, 8 Fail); phát hiện 08 lỗi ghi thiếu trường.", "Báo cáo trình BGD Bao_cao_Trinh_Ban_Giam_Doc_Ket_Qua_Nghiem_Thu_Audit_Log_Inxify_Muc_7.docx & Excel."),
         ("Mục 8 & 9:\nNguồn OTA & Phòng chưa sẵn sàng", "Lập 01 văn bản tổng hợp yêu cầu kỹ thuật đưa vào danh mục nghiệm thu.", "Đã quy chuẩn hóa 05 tiêu chuẩn kỹ thuật (REQ-M8-01 -> REQ-M9-02) và 08 kịch bản nghiệm thu đón đầu cho Dev.", "Văn bản Van_ban_Tong_hop_Yeu_cau_Ky_thuat_Nghiem_thu_Inxify_Muc_8_va_Muc_9_Co_Anh_Dan_Chung.docx.")
@@ -449,11 +443,14 @@ def create_full_report():
     r_nl_v.font.name = "Times New Roman"
     r_nl_v.font.size = Pt(10.5)
 
-    # Save to TARGET_FILE (PCNTT_MauBC.docx) and NAMED_FILE
+    # Save to TARGET_FILE, NAMED_FILE and BACKUP_DIR_FILE
     doc.save(TARGET_FILE)
     doc.save(NAMED_FILE)
-    print("SUCCESS: Filled report into:", TARGET_FILE, f"({os.path.getsize(TARGET_FILE)} bytes)")
-    print("SUCCESS: Also saved copy to:", NAMED_FILE, f"({os.path.getsize(NAMED_FILE)} bytes)")
+    if os.path.exists(os.path.dirname(BACKUP_DIR_FILE)):
+        doc.save(BACKUP_DIR_FILE)
+    print("SUCCESS: Filled report into:", TARGET_FILE)
+    print("SUCCESS: Also saved copy to:", NAMED_FILE)
+    print("SUCCESS: Also updated backup copy at:", BACKUP_DIR_FILE)
 
 if __name__ == "__main__":
     create_full_report()
